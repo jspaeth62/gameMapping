@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ef012725a4c9d71e80fdbf39c17b148c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ef012725a4c9d71e80fdbf39c17b148c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ef012725a4c9d71e80fdbf39c17b148c = L.map(
+                "map_ef012725a4c9d71e80fdbf39c17b148c",
+                {
+                    center: [37.0902, -95.7129],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2e09d7b5949bb10b09772e689b2cb7bc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ef012725a4c9d71e80fdbf39c17b148c);
+        
+    
+            var marker_ab1a475eae2b303e698382cdb978afec = L.marker(
+                [36.1438717, -86.80894099999999],
+                {}
+            ).addTo(map_ef012725a4c9d71e80fdbf39c17b148c);
+        
+    
+        var popup_82540c3a8475119606337f73934d6b94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67c7734f22b7a6a3e5f00c4dfdd7f268 = $(`<div id="html_67c7734f22b7a6a3e5f00c4dfdd7f268" style="width: 100.0%; height: 100.0%;">Away: Hawai'i<br>Home: Vanderbilt<br>Stadium: FirstBank Stadium, Nashville, TN<br>Date: 8/27</div>`)[0];
+                popup_82540c3a8475119606337f73934d6b94.setContent(html_67c7734f22b7a6a3e5f00c4dfdd7f268);
+            
+        
+
+        marker_ab1a475eae2b303e698382cdb978afec.bindPopup(popup_82540c3a8475119606337f73934d6b94)
+        ;
+
+        
+    
+    
+            var marker_0b8f2e4d74d0665d9bc9cd3b4c74fd38 = L.marker(
+                [34.0140526, -118.2878754],
+                {}
+            ).addTo(map_ef012725a4c9d71e80fdbf39c17b148c);
+        
+    
+        var popup_5e9e4331dee63540a236f096ecb5046c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d3fa7d369a874f3cb32c970532ebf9c = $(`<div id="html_0d3fa7d369a874f3cb32c970532ebf9c" style="width: 100.0%; height: 100.0%;">Away: San José State<br>Home: USC<br>Stadium: Los Angeles Memorial Coliseum, Los Angeles, CA<br>Date: 8/27</div>`)[0];
+                popup_5e9e4331dee63540a236f096ecb5046c.setContent(html_0d3fa7d369a874f3cb32c970532ebf9c);
+            
+        
+
+        marker_0b8f2e4d74d0665d9bc9cd3b4c74fd38.bindPopup(popup_5e9e4331dee63540a236f096ecb5046c)
+        ;
+
+        
+    
+    
+            var marker_07d46d36222101fd139decabbfe733ba = L.marker(
+                [53.3352318, -6.228457],
+                {}
+            ).addTo(map_ef012725a4c9d71e80fdbf39c17b148c);
+        
+    
+        var popup_c2175b0a949aeefd644e954da9698502 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9301abd749ecb53d08ea8b94ea93d9df = $(`<div id="html_9301abd749ecb53d08ea8b94ea93d9df" style="width: 100.0%; height: 100.0%;">Away: Navy<br>Home: Notre Dame<br>Stadium: Aviva Stadium, Dublin<br>Date: 8/27</div>`)[0];
+                popup_c2175b0a949aeefd644e954da9698502.setContent(html_9301abd749ecb53d08ea8b94ea93d9df);
+            
+        
+
+        marker_07d46d36222101fd139decabbfe733ba.bindPopup(popup_c2175b0a949aeefd644e954da9698502)
+        ;
+
+        
+    
+    
+            var marker_835012544dda494072d01dffc5e3bc95 = L.marker(
+                [32.27948550000001, -106.7417131],
+                {}
+            ).addTo(map_ef012725a4c9d71e80fdbf39c17b148c);
+        
+    
+        var popup_c89dff6732a4ec4db8dbb4e6224d02f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18be75044033ac11c54494723a9fb181 = $(`<div id="html_18be75044033ac11c54494723a9fb181" style="width: 100.0%; height: 100.0%;">Away: UMass<br>Home: New Mexico State<br>Stadium: Aggie Memorial Stadium, Las Cruces, NM<br>Date: 8/27</div>`)[0];
+                popup_c89dff6732a4ec4db8dbb4e6224d02f2.setContent(html_18be75044033ac11c54494723a9fb181);
+            
+        
+
+        marker_835012544dda494072d01dffc5e3bc95.bindPopup(popup_c89dff6732a4ec4db8dbb4e6224d02f2)
+        ;
+
+        
+    
+    
+            var marker_7a7d8cbf875e0a2425f0af5c5da0c7e6 = L.marker(
+                [32.7841307, -117.1224366],
+                {}
+            ).addTo(map_ef012725a4c9d71e80fdbf39c17b148c);
+        
+    
+        var popup_b6080b74a017a879eb0d45fc6f809f02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_369e5ccc143de6ed4562050a69a96085 = $(`<div id="html_369e5ccc143de6ed4562050a69a96085" style="width: 100.0%; height: 100.0%;">Away: Ohio<br>Home: San Diego State<br>Stadium: Snapdragon Stadium, San Diego, CA<br>Date: 8/27</div>`)[0];
+                popup_b6080b74a017a879eb0d45fc6f809f02.setContent(html_369e5ccc143de6ed4562050a69a96085);
+            
+        
+
+        marker_7a7d8cbf875e0a2425f0af5c5da0c7e6.bindPopup(popup_b6080b74a017a879eb0d45fc6f809f02)
+        ;
+
+        
+    
+    
+            var marker_f133a14a080915fad57c4b3f6b4c285f = L.marker(
+                [33.8203824, -85.7662941],
+                {}
+            ).addTo(map_ef012725a4c9d71e80fdbf39c17b148c);
+        
+    
+        var popup_e6705cd8e6513fdb09cb71263cb5392b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a79eee498d3deee2bd36e8e9fed991f0 = $(`<div id="html_a79eee498d3deee2bd36e8e9fed991f0" style="width: 100.0%; height: 100.0%;">Away: UTEP<br>Home: Jacksonville State<br>Stadium: Burgess-Snow Field, Jacksonville, AL<br>Date: 8/27</div>`)[0];
+                popup_e6705cd8e6513fdb09cb71263cb5392b.setContent(html_a79eee498d3deee2bd36e8e9fed991f0);
+            
+        
+
+        marker_f133a14a080915fad57c4b3f6b4c285f.bindPopup(popup_e6705cd8e6513fdb09cb71263cb5392b)
+        ;
+
+        
+    
+    
+            var marker_bfde03e0a5f30af7a8a7698c238fc0bc = L.marker(
+                [32.5320245, -92.655838],
+                {}
+            ).addTo(map_ef012725a4c9d71e80fdbf39c17b148c);
+        
+    
+        var popup_ec922782db8f355ecbd3ab08233d9ee3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_867e3416405880075bcbf726f2de35bd = $(`<div id="html_867e3416405880075bcbf726f2de35bd" style="width: 100.0%; height: 100.0%;">Away: Florida International<br>Home: Louisiana Tech<br>Stadium: Joe Aillet Stadium, Ruston, LA<br>Date: 8/27</div>`)[0];
+                popup_ec922782db8f355ecbd3ab08233d9ee3.setContent(html_867e3416405880075bcbf726f2de35bd);
+            
+        
+
+        marker_bfde03e0a5f30af7a8a7698c238fc0bc.bindPopup(popup_ec922782db8f355ecbd3ab08233d9ee3)
+        ;
+
+        
+    
+</script>
+</html>
