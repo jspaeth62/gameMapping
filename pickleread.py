@@ -2,7 +2,7 @@
 import pandas as pd
 
 # Load the pickle file containing the dictionary
-with open('ncaafgames_dict.pickle', 'rb') as f:
+with open('nbagames_dict.pickle', 'rb') as f:
     data_dict = pickle.load(f)
 
 # Create an empty list to hold the dataframes
@@ -16,4 +16,4 @@ for df in data_dict.values():
 merged_df = pd.concat(dataframes, ignore_index=True)
 
 # Save the merged dataframe to a CSV file
-merged_df.to_csv('merged_data.csv', index=False)
+merged_df.to_csv('nbagames.csv', index=False)

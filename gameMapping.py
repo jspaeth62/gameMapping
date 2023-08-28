@@ -1,14 +1,14 @@
 import pandas as pd
-import googlemaps
-import plotly.graph_objects as go
+#import googlemaps
+#import plotly.graph_objects as go
 import pickle
-from geopy.geocoders import Nominatim
-from geopy import exc
-import geopy.geocoders
-import plotly.express as px
-from plotly.subplots import make_subplots
-import folium
-
+#from geopy.geocoders import Nominatim
+#from geopy import exc
+#import geopy.geocoders
+#import plotly.express as px
+#from plotly.subplots import make_subplots
+#import folium
+'''
 # Read the Excel file
 excel_file = 'C:/Users/Josh Spaeth/Desktop/projects/Game Mapping/stadiumAddresses.xlsx'
 sheet1_name = 'NFL'
@@ -34,7 +34,7 @@ def validate_address(address):
     except:
 
         return False
-
+'''
 def validation(table):
 # Test the validity of addresses in Table
     for address in table.iloc[:, 1]:
@@ -112,9 +112,11 @@ def creategames():
 
     masterdict = {}
 
-    for i in range(1,16):
+    dateslist = ['20231024', '20231031', '20231107', '20231114', '20231121', '20231128', '20231205', '20231212', '20231219', '20231226', '20240102', '20240109', '20240116', '20240123', '20240130', '20240206', '20240213', '20240220', '20240227', '20240305', '20240312', '20240319', '20240326', '20240402', '20240409']
+
+    for i in range(len(dateslist)-1):
         # URL or HTML content of the page with table-like data
-        url = 'https://www.espn.com/college-football/schedule/_/week/' + str(i) + '/year/2023/seasontype/2'  # Replace with the actual URL or HTML content
+        url = 'https://www.espn.com/nba/schedule/_/date/' + dateslist[i]  # Replace with the actual URL or HTML content
 
         # Read HTML tables from the page
         tables = pd.read_html(url, header=0)
@@ -155,7 +157,7 @@ def creategames():
                 # Print the extracted table data
                 #print(table_data)
         
-    with open('ncaafgames_dict.pickle', 'wb') as file:
+    with open('nbagames_dict.pickle', 'wb') as file:
         pickle.dump(masterdict, file)
 
 def readPickle(fileo):
@@ -250,12 +252,12 @@ def main():
     #print(NCAAF['Team'])
     #load_plot(NFL)
 
-    #creategames()
+    creategames()
 
-    NCAAFdictg = readPickle('ncaafgames_dict.pickle')
+    #NCAAFdictg = readPickle('ncaafgames_dict.pickle')
 
-    for table in NCAAFdictg.values():
-        print(table)
+    #for table in NCAAFdictg.values():
+        #print(table)
     #dict_coords = add_coords(NCAAFdictg)
     #NCAAFstadDictg = readPickle('ncaafgames_stadiums_dict.pickle')
     

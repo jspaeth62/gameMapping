@@ -1,0 +1,4371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8777f7602a718bf69a0d4507653b102e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8777f7602a718bf69a0d4507653b102e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8777f7602a718bf69a0d4507653b102e = L.map(
+                "map_8777f7602a718bf69a0d4507653b102e",
+                {
+                    center: [40.0, -100.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cb3308a1461ef6bd8827bd3315f160b3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8777f7602a718bf69a0d4507653b102e);
+        
+    
+            var marker_cluster_85e4971655257d97a2e0dd8d18c54081 = L.markerClusterGroup(
+                {}
+            );
+            map_8777f7602a718bf69a0d4507653b102e.addLayer(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var marker_4308c71554c93e78c63252365846d87d = L.marker(
+                [42.7737546, -78.7869723],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_3fd3c0a8cf6292826e698ff42006a21d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4308c71554c93e78c63252365846d87d.setIcon(icon_3fd3c0a8cf6292826e698ff42006a21d);
+        
+    
+        var popup_d5484c5b737532c7cc0a609a361a6eb9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b644372d9ffbaafab8454a3b5e0e215e = $(`<div id="html_b644372d9ffbaafab8454a3b5e0e215e" style="width: 100.0%; height: 100.0%;"><b>Tampa Bay Buccaneers @ Buffalo Bills</b><br><i>Date:</i> 2023-10-26 00:00:00<br><u>Sport:</u> NFL</div>`)[0];
+                popup_d5484c5b737532c7cc0a609a361a6eb9.setContent(html_b644372d9ffbaafab8454a3b5e0e215e);
+            
+        
+
+        marker_4308c71554c93e78c63252365846d87d.bindPopup(popup_d5484c5b737532c7cc0a609a361a6eb9)
+        ;
+
+        
+    
+    
+            var marker_dc720194934b03283f1a9d33e9cd14a5 = L.marker(
+                [36.166479, -86.77128979999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_1c7cd2942a11937939ab264ece797333 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dc720194934b03283f1a9d33e9cd14a5.setIcon(icon_1c7cd2942a11937939ab264ece797333);
+        
+    
+        var popup_02504dccfa99662cfb0be63e2930c5ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a12247aa484523e87e98b8ad102b9633 = $(`<div id="html_a12247aa484523e87e98b8ad102b9633" style="width: 100.0%; height: 100.0%;"><b>Atlanta Falcons @ Tennessee Titans</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NFL</div>`)[0];
+                popup_02504dccfa99662cfb0be63e2930c5ea.setContent(html_a12247aa484523e87e98b8ad102b9633);
+            
+        
+
+        marker_dc720194934b03283f1a9d33e9cd14a5.bindPopup(popup_02504dccfa99662cfb0be63e2930c5ea)
+        ;
+
+        
+    
+    
+            var marker_b21f5c416604ab91410825590c7e68e3 = L.marker(
+                [33.5276247, -112.2625593],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_d44cc59778beaffc9fc4d3c4a964d0d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b21f5c416604ab91410825590c7e68e3.setIcon(icon_d44cc59778beaffc9fc4d3c4a964d0d7);
+        
+    
+        var popup_3e076ae84225814823fb152e30197849 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b23692bb48275f135f3a9c794756460 = $(`<div id="html_1b23692bb48275f135f3a9c794756460" style="width: 100.0%; height: 100.0%;"><b>Baltimore Ravens @ Arizona Cardinals</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NFL</div>`)[0];
+                popup_3e076ae84225814823fb152e30197849.setContent(html_1b23692bb48275f135f3a9c794756460);
+            
+        
+
+        marker_b21f5c416604ab91410825590c7e68e3.bindPopup(popup_3e076ae84225814823fb152e30197849)
+        ;
+
+        
+    
+    
+            var marker_727d69a43e3f4c8cdeffaf45f661d932 = L.marker(
+                [37.4033165, -121.9693774],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_82718e07d84be00fdd03c777f49c8f4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_727d69a43e3f4c8cdeffaf45f661d932.setIcon(icon_82718e07d84be00fdd03c777f49c8f4a);
+        
+    
+        var popup_53729341c355d95c338ab8300092fd23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_203c3c10a4e465a6fbc8c360dfb1f3ef = $(`<div id="html_203c3c10a4e465a6fbc8c360dfb1f3ef" style="width: 100.0%; height: 100.0%;"><b>Cincinnati Bengals @ San Francisco 49ers</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NFL</div>`)[0];
+                popup_53729341c355d95c338ab8300092fd23.setContent(html_203c3c10a4e465a6fbc8c360dfb1f3ef);
+            
+        
+
+        marker_727d69a43e3f4c8cdeffaf45f661d932.bindPopup(popup_53729341c355d95c338ab8300092fd23)
+        ;
+
+        
+    
+    
+            var marker_4cce9a3c2b96c18f1526ac45143eed6b = L.marker(
+                [47.5946788, -122.3315548],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_6f2ed35e1ab790c5416fc2d9893b83a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4cce9a3c2b96c18f1526ac45143eed6b.setIcon(icon_6f2ed35e1ab790c5416fc2d9893b83a0);
+        
+    
+        var popup_e88394db7bfe9adb152e876b31d11430 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_472a438ec734cac50615647b0ceaf31f = $(`<div id="html_472a438ec734cac50615647b0ceaf31f" style="width: 100.0%; height: 100.0%;"><b>Cleveland Browns @ Seattle Seahawks</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NFL</div>`)[0];
+                popup_e88394db7bfe9adb152e876b31d11430.setContent(html_472a438ec734cac50615647b0ceaf31f);
+            
+        
+
+        marker_4cce9a3c2b96c18f1526ac45143eed6b.bindPopup(popup_e88394db7bfe9adb152e876b31d11430)
+        ;
+
+        
+    
+    
+            var marker_875a840890e2914f7d50aae164deefa7 = L.marker(
+                [35.2257795, -80.852965],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_e5ea3c2c565c729a12529f94303a658c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_875a840890e2914f7d50aae164deefa7.setIcon(icon_e5ea3c2c565c729a12529f94303a658c);
+        
+    
+        var popup_7ca5140f0bf2d66056696e931ebd4599 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a05f274fde6952d0255bf66afa3d3a8a = $(`<div id="html_a05f274fde6952d0255bf66afa3d3a8a" style="width: 100.0%; height: 100.0%;"><b>Houston Texans @ Carolina Panthers</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NFL</div>`)[0];
+                popup_7ca5140f0bf2d66056696e931ebd4599.setContent(html_a05f274fde6952d0255bf66afa3d3a8a);
+            
+        
+
+        marker_875a840890e2914f7d50aae164deefa7.bindPopup(popup_7ca5140f0bf2d66056696e931ebd4599)
+        ;
+
+        
+    
+    
+            var marker_8c9f9d555189c82289a47ac0d4ab1b8e = L.marker(
+                [40.4467648, -80.0157603],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_fe9afe0ac440f1f78b46abb9a612bc55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8c9f9d555189c82289a47ac0d4ab1b8e.setIcon(icon_fe9afe0ac440f1f78b46abb9a612bc55);
+        
+    
+        var popup_8503332f66c20f114ab2db464baec8ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba70b448b0b1cbf3601ff19c73e95d5a = $(`<div id="html_ba70b448b0b1cbf3601ff19c73e95d5a" style="width: 100.0%; height: 100.0%;"><b>Jacksonville Jaguars @ Pittsburgh Steelers</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NFL</div>`)[0];
+                popup_8503332f66c20f114ab2db464baec8ce.setContent(html_ba70b448b0b1cbf3601ff19c73e95d5a);
+            
+        
+
+        marker_8c9f9d555189c82289a47ac0d4ab1b8e.bindPopup(popup_8503332f66c20f114ab2db464baec8ce)
+        ;
+
+        
+    
+    
+            var marker_5eff0a73e8e43890b73f41a5e186fee3 = L.marker(
+                [39.7438895, -105.0201094],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_6b925052404d2edb02fd18d972f3324a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5eff0a73e8e43890b73f41a5e186fee3.setIcon(icon_6b925052404d2edb02fd18d972f3324a);
+        
+    
+        var popup_ff83922f1f6897bed9004d285b6d37c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1bf5705b67c6513ce473e7ddf1ca7ca6 = $(`<div id="html_1bf5705b67c6513ce473e7ddf1ca7ca6" style="width: 100.0%; height: 100.0%;"><b>Kansas City Chiefs @ Denver Broncos</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NFL</div>`)[0];
+                popup_ff83922f1f6897bed9004d285b6d37c6.setContent(html_1bf5705b67c6513ce473e7ddf1ca7ca6);
+            
+        
+
+        marker_5eff0a73e8e43890b73f41a5e186fee3.bindPopup(popup_ff83922f1f6897bed9004d285b6d37c6)
+        ;
+
+        
+    
+    
+            var marker_266d0095f948460d6eddfb0173cfa414 = L.marker(
+                [33.9534651, -118.3390396],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_828289018f4fc0307dc93bdbea9fd0d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_266d0095f948460d6eddfb0173cfa414.setIcon(icon_828289018f4fc0307dc93bdbea9fd0d8);
+        
+    
+        var popup_95a5769b686b75403468efb3e7afd09d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_caffd8d8cab5f9a06c22cd6dde38a1ea = $(`<div id="html_caffd8d8cab5f9a06c22cd6dde38a1ea" style="width: 100.0%; height: 100.0%;"><b>Chicago Bears @ Los Angeles Chargers</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NFL</div>`)[0];
+                popup_95a5769b686b75403468efb3e7afd09d.setContent(html_caffd8d8cab5f9a06c22cd6dde38a1ea);
+            
+        
+
+        marker_266d0095f948460d6eddfb0173cfa414.bindPopup(popup_95a5769b686b75403468efb3e7afd09d)
+        ;
+
+        
+    
+    
+            var marker_995345d69c470e155541d4d313e917e6 = L.marker(
+                [32.7479966, -97.09341649999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_8701496b87bdcab5428f7ad55e7a10e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_995345d69c470e155541d4d313e917e6.setIcon(icon_8701496b87bdcab5428f7ad55e7a10e3);
+        
+    
+        var popup_61f415431b88b68b111221cb49800e91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eacdf6871ff6bc100e9db918b0fdf800 = $(`<div id="html_eacdf6871ff6bc100e9db918b0fdf800" style="width: 100.0%; height: 100.0%;"><b>Los Angeles Rams @ Dallas Cowboys</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NFL</div>`)[0];
+                popup_61f415431b88b68b111221cb49800e91.setContent(html_eacdf6871ff6bc100e9db918b0fdf800);
+            
+        
+
+        marker_995345d69c470e155541d4d313e917e6.bindPopup(popup_61f415431b88b68b111221cb49800e91)
+        ;
+
+        
+    
+    
+            var marker_1e6d06bf12836b1633364eb509f075d8 = L.marker(
+                [44.5013406, -88.06220830000001],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_d8b45347d2925b88f7c03f8a628d00d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1e6d06bf12836b1633364eb509f075d8.setIcon(icon_d8b45347d2925b88f7c03f8a628d00d5);
+        
+    
+        var popup_74a1e81c8145a1b96e5c4d34cf31367e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e25be68a8bee8d775a609d039ae94267 = $(`<div id="html_e25be68a8bee8d775a609d039ae94267" style="width: 100.0%; height: 100.0%;"><b>Minnesota Vikings @ Green Bay Packers</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NFL</div>`)[0];
+                popup_74a1e81c8145a1b96e5c4d34cf31367e.setContent(html_e25be68a8bee8d775a609d039ae94267);
+            
+        
+
+        marker_1e6d06bf12836b1633364eb509f075d8.bindPopup(popup_74a1e81c8145a1b96e5c4d34cf31367e)
+        ;
+
+        
+    
+    
+            var marker_1606e632209e3dbe83f55c6e8816d66b = L.marker(
+                [25.958326, -80.23959789999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_5a2bae5cc6a7dfdc2fe4d785c31b3532 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1606e632209e3dbe83f55c6e8816d66b.setIcon(icon_5a2bae5cc6a7dfdc2fe4d785c31b3532);
+        
+    
+        var popup_2ec0987cec813945f8e3ad4bddd14d55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e08e99201fc6c4b2222afc6dcc593c11 = $(`<div id="html_e08e99201fc6c4b2222afc6dcc593c11" style="width: 100.0%; height: 100.0%;"><b>New England Patriots @ Miami Dolphins</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NFL</div>`)[0];
+                popup_2ec0987cec813945f8e3ad4bddd14d55.setContent(html_e08e99201fc6c4b2222afc6dcc593c11);
+            
+        
+
+        marker_1606e632209e3dbe83f55c6e8816d66b.bindPopup(popup_2ec0987cec813945f8e3ad4bddd14d55)
+        ;
+
+        
+    
+    
+            var marker_7484772c227c5a2bf055ca567142bee7 = L.marker(
+                [39.7601007, -86.16388769999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_c097993f11c182c71c8e71f6b13d247e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7484772c227c5a2bf055ca567142bee7.setIcon(icon_c097993f11c182c71c8e71f6b13d247e);
+        
+    
+        var popup_4ed0a4fa3367e8ee6c2bc26c49e3d4b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30bf87497c7bdb0de06cd35356bc0e1f = $(`<div id="html_30bf87497c7bdb0de06cd35356bc0e1f" style="width: 100.0%; height: 100.0%;"><b>New Orleans Saints @ Indianapolis Colts</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NFL</div>`)[0];
+                popup_4ed0a4fa3367e8ee6c2bc26c49e3d4b8.setContent(html_30bf87497c7bdb0de06cd35356bc0e1f);
+            
+        
+
+        marker_7484772c227c5a2bf055ca567142bee7.bindPopup(popup_4ed0a4fa3367e8ee6c2bc26c49e3d4b8)
+        ;
+
+        
+    
+    
+            var marker_859b16b40b23cb70c6482fc4926a929a = L.marker(
+                [40.8135064, -74.074457],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_df498a538e5bc99efbd0f93a40fa1a79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_859b16b40b23cb70c6482fc4926a929a.setIcon(icon_df498a538e5bc99efbd0f93a40fa1a79);
+        
+    
+        var popup_a210748d0b25d136509103a703d20727 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8231dc651c6b820a3879d52332060888 = $(`<div id="html_8231dc651c6b820a3879d52332060888" style="width: 100.0%; height: 100.0%;"><b>New York Jets @ New York Giants</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NFL</div>`)[0];
+                popup_a210748d0b25d136509103a703d20727.setContent(html_8231dc651c6b820a3879d52332060888);
+            
+        
+
+        marker_859b16b40b23cb70c6482fc4926a929a.bindPopup(popup_a210748d0b25d136509103a703d20727)
+        ;
+
+        
+    
+    
+            var marker_c31d2fc80dca55bd9b1a1c19a0324a73 = L.marker(
+                [38.9077031, -76.8645064],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_b98fd91d2cb645f429dff850739832fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c31d2fc80dca55bd9b1a1c19a0324a73.setIcon(icon_b98fd91d2cb645f429dff850739832fe);
+        
+    
+        var popup_2932685471b613783b13aa679f1f49b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cf9cf2057c4fa2355fc72e79b95fc98 = $(`<div id="html_6cf9cf2057c4fa2355fc72e79b95fc98" style="width: 100.0%; height: 100.0%;"><b>Philadelphia Eagles @ Washington Commanders</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NFL</div>`)[0];
+                popup_2932685471b613783b13aa679f1f49b5.setContent(html_6cf9cf2057c4fa2355fc72e79b95fc98);
+            
+        
+
+        marker_c31d2fc80dca55bd9b1a1c19a0324a73.bindPopup(popup_2932685471b613783b13aa679f1f49b5)
+        ;
+
+        
+    
+    
+            var marker_f152ec0fe844f80bac676c7df2da66f9 = L.marker(
+                [42.3400064, -83.045603],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_944bbea3344dea6998894b679db79aa5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f152ec0fe844f80bac676c7df2da66f9.setIcon(icon_944bbea3344dea6998894b679db79aa5);
+        
+    
+        var popup_3dbbbbd0769903579383789ad970ba03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4dc1d038cde76a72d69603f21a70d06 = $(`<div id="html_a4dc1d038cde76a72d69603f21a70d06" style="width: 100.0%; height: 100.0%;"><b>Las Vegas Raiders @ Detroit Lions</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NFL</div>`)[0];
+                popup_3dbbbbd0769903579383789ad970ba03.setContent(html_a4dc1d038cde76a72d69603f21a70d06);
+            
+        
+
+        marker_f152ec0fe844f80bac676c7df2da66f9.bindPopup(popup_3dbbbbd0769903579383789ad970ba03)
+        ;
+
+        
+    
+    
+            var marker_b9706abc2e4ceb4b3c8fd5b8d1f7cd1d = L.marker(
+                [37.2199873, -80.4180643],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_0fb85a113c7da108d60feb850b1972b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b9706abc2e4ceb4b3c8fd5b8d1f7cd1d.setIcon(icon_0fb85a113c7da108d60feb850b1972b5);
+        
+    
+        var popup_476d6021de2368d1b45088a9504f1310 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0aa6bf3ffce88740c85284316869dc41 = $(`<div id="html_0aa6bf3ffce88740c85284316869dc41" style="width: 100.0%; height: 100.0%;"><b>Syracuse @ Virginia Tech</b><br><i>Date:</i> 2023-10-26 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_476d6021de2368d1b45088a9504f1310.setContent(html_0aa6bf3ffce88740c85284316869dc41);
+            
+        
+
+        marker_b9706abc2e4ceb4b3c8fd5b8d1f7cd1d.bindPopup(popup_476d6021de2368d1b45088a9504f1310)
+        ;
+
+        
+    
+    
+            var marker_3d405bd1583af8bc043ab7911d119235 = L.marker(
+                [32.4121952, -81.7831353],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_fbcba745465460865a6a2bbb854941e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d405bd1583af8bc043ab7911d119235.setIcon(icon_fbcba745465460865a6a2bbb854941e3);
+        
+    
+        var popup_da0e434af94f9d1d01d242f538452005 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ae672c05de83abc314c4134a59d93eb = $(`<div id="html_4ae672c05de83abc314c4134a59d93eb" style="width: 100.0%; height: 100.0%;"><b>Georgia State @ Georgia Southern</b><br><i>Date:</i> 2023-10-26 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_da0e434af94f9d1d01d242f538452005.setContent(html_4ae672c05de83abc314c4134a59d93eb);
+            
+        
+
+        marker_3d405bd1583af8bc043ab7911d119235.bindPopup(popup_da0e434af94f9d1d01d242f538452005)
+        ;
+
+        
+    
+    
+            var marker_024b8003141849096085ea0e2a1afd14 = L.marker(
+                [35.3104931, -80.7401126],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_ec810e5651081c5de03a924516967ad2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_024b8003141849096085ea0e2a1afd14.setIcon(icon_ec810e5651081c5de03a924516967ad2);
+        
+    
+        var popup_7b1273dbdf96acb1af57c2a2a6ae1f00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cbefe6dd3ab6a5c956ca5f5af12851a = $(`<div id="html_6cbefe6dd3ab6a5c956ca5f5af12851a" style="width: 100.0%; height: 100.0%;"><b>Florida Atlantic @ Charlotte</b><br><i>Date:</i> 2023-10-27 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_7b1273dbdf96acb1af57c2a2a6ae1f00.setContent(html_6cbefe6dd3ab6a5c956ca5f5af12851a);
+            
+        
+
+        marker_024b8003141849096085ea0e2a1afd14.bindPopup(popup_7b1273dbdf96acb1af57c2a2a6ae1f00)
+        ;
+
+        
+    
+    
+            var marker_ca710464c7909cbea6e5f27f5c9a80fa = L.marker(
+                [42.3351281, -71.1664682],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_3deb7e674a8892655000e126ff72e31a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ca710464c7909cbea6e5f27f5c9a80fa.setIcon(icon_3deb7e674a8892655000e126ff72e31a);
+        
+    
+        var popup_728b87efcaeb0ce62254c1875d571b6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d8dca3b4074ccda1a51ac501b1ced8e = $(`<div id="html_9d8dca3b4074ccda1a51ac501b1ced8e" style="width: 100.0%; height: 100.0%;"><b>UConn @ Boston College</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_728b87efcaeb0ce62254c1875d571b6b.setContent(html_9d8dca3b4074ccda1a51ac501b1ced8e);
+            
+        
+
+        marker_ca710464c7909cbea6e5f27f5c9a80fa.bindPopup(popup_728b87efcaeb0ce62254c1875d571b6b)
+        ;
+
+        
+    
+    
+            var marker_5176ec8a2bfdee217b173c7859ac7037 = L.marker(
+                [30.3239099, -81.6373497],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_1663a6ff1d72c5c7870c8b2536b2341f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5176ec8a2bfdee217b173c7859ac7037.setIcon(icon_1663a6ff1d72c5c7870c8b2536b2341f);
+        
+    
+        var popup_fd116abd94abe0522d27c7585e76e13c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcfc5ebe2b9fb785f44c81c0802124f8 = $(`<div id="html_bcfc5ebe2b9fb785f44c81c0802124f8" style="width: 100.0%; height: 100.0%;"><b>Georgia @ Florida</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_fd116abd94abe0522d27c7585e76e13c.setContent(html_bcfc5ebe2b9fb785f44c81c0802124f8);
+            
+        
+
+        marker_5176ec8a2bfdee217b173c7859ac7037.bindPopup(popup_fd116abd94abe0522d27c7585e76e13c)
+        ;
+
+        
+    
+    
+            var marker_b93210efd5cf976bc70b82b732eed796 = L.marker(
+                [40.8206975, -96.705588],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_4bfa428484c893cd60ca7b1d6d66fe1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b93210efd5cf976bc70b82b732eed796.setIcon(icon_4bfa428484c893cd60ca7b1d6d66fe1d);
+        
+    
+        var popup_edba9c811e0bf46f88ecb831f620a4c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a70c507e403420ed4ecadc8668e9ea4 = $(`<div id="html_5a70c507e403420ed4ecadc8668e9ea4" style="width: 100.0%; height: 100.0%;"><b>Purdue @ Nebraska</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_edba9c811e0bf46f88ecb831f620a4c7.setContent(html_5a70c507e403420ed4ecadc8668e9ea4);
+            
+        
+
+        marker_b93210efd5cf976bc70b82b732eed796.bindPopup(popup_edba9c811e0bf46f88ecb831f620a4c7)
+        ;
+
+        
+    
+    
+            var marker_d7dfa70f75cd7d8a73a63acc9e0249a0 = L.marker(
+                [34.3619355, -89.5342191],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_941ae8b2016509e667b2cba1ea62f193 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d7dfa70f75cd7d8a73a63acc9e0249a0.setIcon(icon_941ae8b2016509e667b2cba1ea62f193);
+        
+    
+        var popup_f7271695ef765930ea98c17c74336f0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66e897930689fd098c085bb9947e5012 = $(`<div id="html_66e897930689fd098c085bb9947e5012" style="width: 100.0%; height: 100.0%;"><b>Vanderbilt @ Ole Miss</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_f7271695ef765930ea98c17c74336f0a.setContent(html_66e897930689fd098c085bb9947e5012);
+            
+        
+
+        marker_d7dfa70f75cd7d8a73a63acc9e0249a0.bindPopup(popup_f7271695ef765930ea98c17c74336f0a)
+        ;
+
+        
+    
+    
+            var marker_c3d73d6ea3944d46ef802bcdda641dd1 = L.marker(
+                [32.2288391, -110.948844],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_5b7a2522de4d6369ab924467ee88ad3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c3d73d6ea3944d46ef802bcdda641dd1.setIcon(icon_5b7a2522de4d6369ab924467ee88ad3a);
+        
+    
+        var popup_516a1ec8c3cf777679dfcbb55efb9905 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89c30aad75aabf143f4afa2d2f5b57b7 = $(`<div id="html_89c30aad75aabf143f4afa2d2f5b57b7" style="width: 100.0%; height: 100.0%;"><b>Oregon State @ Arizona</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_516a1ec8c3cf777679dfcbb55efb9905.setContent(html_89c30aad75aabf143f4afa2d2f5b57b7);
+            
+        
+
+        marker_c3d73d6ea3944d46ef802bcdda641dd1.bindPopup(popup_516a1ec8c3cf777679dfcbb55efb9905)
+        ;
+
+        
+    
+    
+            var marker_0fa908f924fdbfb49ccc627cdf2916f8 = L.marker(
+                [33.426453, -111.9325733],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_5dde20a711b7921b9dbdab349bbee508 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0fa908f924fdbfb49ccc627cdf2916f8.setIcon(icon_5dde20a711b7921b9dbdab349bbee508);
+        
+    
+        var popup_02c160aecb2089a72fa247b5d78cceb4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_777041836d74050e9b48adc2888e9135 = $(`<div id="html_777041836d74050e9b48adc2888e9135" style="width: 100.0%; height: 100.0%;"><b>Washington State @ Arizona State</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_02c160aecb2089a72fa247b5d78cceb4.setContent(html_777041836d74050e9b48adc2888e9135);
+            
+        
+
+        marker_0fa908f924fdbfb49ccc627cdf2916f8.bindPopup(popup_02c160aecb2089a72fa247b5d78cceb4)
+        ;
+
+        
+    
+    
+            var marker_43cafb5ca74927b926098f7e4a4d3350 = L.marker(
+                [37.8706571, -122.2507783],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_0c3802d6f254c0ed9a5d9a799cb4307f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_43cafb5ca74927b926098f7e4a4d3350.setIcon(icon_0c3802d6f254c0ed9a5d9a799cb4307f);
+        
+    
+        var popup_ae7c32c85cf10ebe414952082b19fc5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_366b87265ea858ddef56e0c289b2aa1c = $(`<div id="html_366b87265ea858ddef56e0c289b2aa1c" style="width: 100.0%; height: 100.0%;"><b>USC @ California</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_ae7c32c85cf10ebe414952082b19fc5c.setContent(html_366b87265ea858ddef56e0c289b2aa1c);
+            
+        
+
+        marker_43cafb5ca74927b926098f7e4a4d3350.bindPopup(popup_ae7c32c85cf10ebe414952082b19fc5c)
+        ;
+
+        
+    
+    
+            var marker_165253c9c81023ca84d1ac3bc67bfa90 = L.marker(
+                [37.4345298, -122.1611227],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_5191b306a1ca572ee4d0b71369e77565 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_165253c9c81023ca84d1ac3bc67bfa90.setIcon(icon_5191b306a1ca572ee4d0b71369e77565);
+        
+    
+        var popup_4b81c475010784194a703f4b3e88676f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57936ce3a0ac54010491e7e88042a1c5 = $(`<div id="html_57936ce3a0ac54010491e7e88042a1c5" style="width: 100.0%; height: 100.0%;"><b>Washington @ Stanford</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_4b81c475010784194a703f4b3e88676f.setContent(html_57936ce3a0ac54010491e7e88042a1c5);
+            
+        
+
+        marker_165253c9c81023ca84d1ac3bc67bfa90.bindPopup(popup_4b81c475010784194a703f4b3e88676f)
+        ;
+
+        
+    
+    
+            var marker_a4ad259309179ed7f97e7605fe49831a = L.marker(
+                [34.1613284, -118.1676462],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_04ea6bb785ddf2c748463b3f25753b99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a4ad259309179ed7f97e7605fe49831a.setIcon(icon_04ea6bb785ddf2c748463b3f25753b99);
+        
+    
+        var popup_fb4d300c2ca08c9528919be9d13b3f51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20d2ee3b4a12f2ba67cc0c9d1bda66d7 = $(`<div id="html_20d2ee3b4a12f2ba67cc0c9d1bda66d7" style="width: 100.0%; height: 100.0%;"><b>Colorado @ UCLA</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_fb4d300c2ca08c9528919be9d13b3f51.setContent(html_20d2ee3b4a12f2ba67cc0c9d1bda66d7);
+            
+        
+
+        marker_a4ad259309179ed7f97e7605fe49831a.bindPopup(popup_fb4d300c2ca08c9528919be9d13b3f51)
+        ;
+
+        
+    
+    
+            var marker_e0744a4e4d60a41bb6da9ebc67e04c31 = L.marker(
+                [40.75975, -111.8490319],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_7cac053b4678bddb772be54f36b2afda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e0744a4e4d60a41bb6da9ebc67e04c31.setIcon(icon_7cac053b4678bddb772be54f36b2afda);
+        
+    
+        var popup_738b5e50f2d455358da82930b191daf8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbffc842b785240b8b10753931e1e3ff = $(`<div id="html_cbffc842b785240b8b10753931e1e3ff" style="width: 100.0%; height: 100.0%;"><b>Oregon @ Utah</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_738b5e50f2d455358da82930b191daf8.setContent(html_cbffc842b785240b8b10753931e1e3ff);
+            
+        
+
+        marker_e0744a4e4d60a41bb6da9ebc67e04c31.bindPopup(popup_738b5e50f2d455358da82930b191daf8)
+        ;
+
+        
+    
+    
+            var marker_5575b028a9c51c2948f26c06160598f6 = L.marker(
+                [41.6983981, -86.233916],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_71969c2758cb708ade8e14f5e222a7b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5575b028a9c51c2948f26c06160598f6.setIcon(icon_71969c2758cb708ade8e14f5e222a7b9);
+        
+    
+        var popup_c74eddf54aa2b929165c63b4faee658b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e195f9d455191117b14b29250a8a567 = $(`<div id="html_3e195f9d455191117b14b29250a8a567" style="width: 100.0%; height: 100.0%;"><b>Pittsburgh @ Notre Dame</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_c74eddf54aa2b929165c63b4faee658b.setContent(html_3e195f9d455191117b14b29250a8a567);
+            
+        
+
+        marker_5575b028a9c51c2948f26c06160598f6.bindPopup(popup_c74eddf54aa2b929165c63b4faee658b)
+        ;
+
+        
+    
+    
+            var marker_2669b6b5393826659d2cefa959df61c5 = L.marker(
+                [35.8008001, -78.7195655],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_a1cf52a830c2b6cdf6018cb1a9525766 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2669b6b5393826659d2cefa959df61c5.setIcon(icon_a1cf52a830c2b6cdf6018cb1a9525766);
+        
+    
+        var popup_6bab903017f156617acbe78e8018fb9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1563693ba5e62e1615962c3747f66bcb = $(`<div id="html_1563693ba5e62e1615962c3747f66bcb" style="width: 100.0%; height: 100.0%;"><b>Clemson @ NC State</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_6bab903017f156617acbe78e8018fb9c.setContent(html_1563693ba5e62e1615962c3747f66bcb);
+            
+        
+
+        marker_2669b6b5393826659d2cefa959df61c5.bindPopup(popup_6bab903017f156617acbe78e8018fb9c)
+        ;
+
+        
+    
+    
+            var marker_fa902a4e21246d30c931c37a00323f96 = L.marker(
+                [38.2064023, -85.75833240000001],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_ab68eff361fc35642da1dd1705e79bf6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fa902a4e21246d30c931c37a00323f96.setIcon(icon_ab68eff361fc35642da1dd1705e79bf6);
+        
+    
+        var popup_4e53f6e17eb2feb1ff0ddd25943f40fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf9e1c2db60afe6325604934c75e3260 = $(`<div id="html_bf9e1c2db60afe6325604934c75e3260" style="width: 100.0%; height: 100.0%;"><b>Duke @ Louisville</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_4e53f6e17eb2feb1ff0ddd25943f40fd.setContent(html_bf9e1c2db60afe6325604934c75e3260);
+            
+        
+
+        marker_fa902a4e21246d30c931c37a00323f96.bindPopup(popup_4e53f6e17eb2feb1ff0ddd25943f40fd)
+        ;
+
+        
+    
+    
+            var marker_0796661420d977f2f5776a0662101149 = L.marker(
+                [36.1314553, -80.2554475],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_09616b5678999cc7d7d5bffeb27c9b23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0796661420d977f2f5776a0662101149.setIcon(icon_09616b5678999cc7d7d5bffeb27c9b23);
+        
+    
+        var popup_f235a259c2fb91a28701ebf147e78975 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03fa18129c237ced705e1ba6cd019917 = $(`<div id="html_03fa18129c237ced705e1ba6cd019917" style="width: 100.0%; height: 100.0%;"><b>Florida State @ Wake Forest</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_f235a259c2fb91a28701ebf147e78975.setContent(html_03fa18129c237ced705e1ba6cd019917);
+            
+        
+
+        marker_0796661420d977f2f5776a0662101149.bindPopup(popup_f235a259c2fb91a28701ebf147e78975)
+        ;
+
+        
+    
+    
+            var marker_1fc17cf6743b6fc1719e41f64f02f2b1 = L.marker(
+                [33.7725939, -84.39325350000001],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_a6fd9a76c39f8ae63af86b2f9ecfdb7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1fc17cf6743b6fc1719e41f64f02f2b1.setIcon(icon_a6fd9a76c39f8ae63af86b2f9ecfdb7a);
+        
+    
+        var popup_d90a9f943a99bd6c26a2934abd3561d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9bd6e4dfc0fbe70d9590e561aed8f01 = $(`<div id="html_b9bd6e4dfc0fbe70d9590e561aed8f01" style="width: 100.0%; height: 100.0%;"><b>North Carolina @ Georgia Tech</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_d90a9f943a99bd6c26a2934abd3561d8.setContent(html_b9bd6e4dfc0fbe70d9590e561aed8f01);
+            
+        
+
+        marker_1fc17cf6743b6fc1719e41f64f02f2b1.bindPopup(popup_d90a9f943a99bd6c26a2934abd3561d8)
+        ;
+
+        
+    
+    
+            var marker_240727f702bef6cf594f452a0fa71a94 = L.marker(
+                [25.958326, -80.23959789999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_af4ea363df685358187e5c516bf455a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_240727f702bef6cf594f452a0fa71a94.setIcon(icon_af4ea363df685358187e5c516bf455a4);
+        
+    
+        var popup_f57508f4817ec90e001306c2a658b73a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3620d19fb7798f0b6120947cb4d4f5ce = $(`<div id="html_3620d19fb7798f0b6120947cb4d4f5ce" style="width: 100.0%; height: 100.0%;"><b>Virginia @ Miami</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_f57508f4817ec90e001306c2a658b73a.setContent(html_3620d19fb7798f0b6120947cb4d4f5ce);
+            
+        
+
+        marker_240727f702bef6cf594f452a0fa71a94.bindPopup(popup_f57508f4817ec90e001306c2a658b73a)
+        ;
+
+        
+    
+    
+            var marker_9034232be55f7254db01c8b1aaf95088 = L.marker(
+                [31.5582015, -97.1156702],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_c1404e555cecd2ff998dafb5f26814e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9034232be55f7254db01c8b1aaf95088.setIcon(icon_c1404e555cecd2ff998dafb5f26814e0);
+        
+    
+        var popup_dc79e55034274740934c0101f0f7ee74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b86749033b657c6873b3a2dcbc4f1a23 = $(`<div id="html_b86749033b657c6873b3a2dcbc4f1a23" style="width: 100.0%; height: 100.0%;"><b>Iowa State @ Baylor</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_dc79e55034274740934c0101f0f7ee74.setContent(html_b86749033b657c6873b3a2dcbc4f1a23);
+            
+        
+
+        marker_9034232be55f7254db01c8b1aaf95088.bindPopup(popup_dc79e55034274740934c0101f0f7ee74)
+        ;
+
+        
+    
+    
+            var marker_078b8b64b79ebe7a2939e7f058c73b1d = L.marker(
+                [38.9629418, -95.2463686],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_3bb5f20e0f6868eeb2344abbdf886498 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_078b8b64b79ebe7a2939e7f058c73b1d.setIcon(icon_3bb5f20e0f6868eeb2344abbdf886498);
+        
+    
+        var popup_f6d5592829d64998390116ce69a4cdd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c52386cd6776fb4ede70919016a32493 = $(`<div id="html_c52386cd6776fb4ede70919016a32493" style="width: 100.0%; height: 100.0%;"><b>Oklahoma @ Kansas</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_f6d5592829d64998390116ce69a4cdd5.setContent(html_c52386cd6776fb4ede70919016a32493);
+            
+        
+
+        marker_078b8b64b79ebe7a2939e7f058c73b1d.bindPopup(popup_f6d5592829d64998390116ce69a4cdd5)
+        ;
+
+        
+    
+    
+            var marker_52195203333fe05a1f4428db438c60c8 = L.marker(
+                [39.2020041, -96.5938552],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_f2ce9e343ee41ae329382b8f9dcc5d01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_52195203333fe05a1f4428db438c60c8.setIcon(icon_f2ce9e343ee41ae329382b8f9dcc5d01);
+        
+    
+        var popup_fa34ea3cfcdb89e6ef04b88a0f6e648a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_093b0c14329b386d606f28b1240b0211 = $(`<div id="html_093b0c14329b386d606f28b1240b0211" style="width: 100.0%; height: 100.0%;"><b>Houston @ Kansas State</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_fa34ea3cfcdb89e6ef04b88a0f6e648a.setContent(html_093b0c14329b386d606f28b1240b0211);
+            
+        
+
+        marker_52195203333fe05a1f4428db438c60c8.bindPopup(popup_fa34ea3cfcdb89e6ef04b88a0f6e648a)
+        ;
+
+        
+    
+    
+            var marker_c24f0ab4e0620fd26f01b45768e30305 = L.marker(
+                [36.1256372, -97.06648899999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_6e94fa5b0432fc85ed6df282f294375f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c24f0ab4e0620fd26f01b45768e30305.setIcon(icon_6e94fa5b0432fc85ed6df282f294375f);
+        
+    
+        var popup_2a8abe68c30fe5a26f92dcf18cc2e24f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ccf4b7e2c51a3375316ef93ed02ab39 = $(`<div id="html_4ccf4b7e2c51a3375316ef93ed02ab39" style="width: 100.0%; height: 100.0%;"><b>Cincinnati @ Oklahoma State</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_2a8abe68c30fe5a26f92dcf18cc2e24f.setContent(html_4ccf4b7e2c51a3375316ef93ed02ab39);
+            
+        
+
+        marker_c24f0ab4e0620fd26f01b45768e30305.bindPopup(popup_2a8abe68c30fe5a26f92dcf18cc2e24f)
+        ;
+
+        
+    
+    
+            var marker_41276f4986ffd727c0889d6c46a6dd17 = L.marker(
+                [30.2835401, -97.7325194],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_a2531d0c8d27ee4b59fc2280ce2a60ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_41276f4986ffd727c0889d6c46a6dd17.setIcon(icon_a2531d0c8d27ee4b59fc2280ce2a60ab);
+        
+    
+        var popup_8335a4d2f2a05ffd4654e58ca8611bd7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_172e2c0e16f46eec862b52a7e5a319de = $(`<div id="html_172e2c0e16f46eec862b52a7e5a319de" style="width: 100.0%; height: 100.0%;"><b>BYU @ Texas</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_8335a4d2f2a05ffd4654e58ca8611bd7.setContent(html_172e2c0e16f46eec862b52a7e5a319de);
+            
+        
+
+        marker_41276f4986ffd727c0889d6c46a6dd17.bindPopup(popup_8335a4d2f2a05ffd4654e58ca8611bd7)
+        ;
+
+        
+    
+    
+            var marker_008a9244eb4abaff3af766b45e0623b2 = L.marker(
+                [28.6082145, -81.1926196],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_1caa25ed380b9fb3f0fdd7484812c98d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_008a9244eb4abaff3af766b45e0623b2.setIcon(icon_1caa25ed380b9fb3f0fdd7484812c98d);
+        
+    
+        var popup_b31ee6aa79bb518b29abe47e0ec60000 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88af34c4a5338c5294cb31d4e6b8ccd8 = $(`<div id="html_88af34c4a5338c5294cb31d4e6b8ccd8" style="width: 100.0%; height: 100.0%;"><b>West Virginia @ UCF</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_b31ee6aa79bb518b29abe47e0ec60000.setContent(html_88af34c4a5338c5294cb31d4e6b8ccd8);
+            
+        
+
+        marker_008a9244eb4abaff3af766b45e0623b2.bindPopup(popup_b31ee6aa79bb518b29abe47e0ec60000)
+        ;
+
+        
+    
+    
+            var marker_ed72a9d98bc536d8610259e14a34ac7a = L.marker(
+                [32.837778, -96.7826953],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_a861a4a272a7c6464cbd1d2efd2b7f8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ed72a9d98bc536d8610259e14a34ac7a.setIcon(icon_a861a4a272a7c6464cbd1d2efd2b7f8c);
+        
+    
+        var popup_134d8f9f928c5fd01aa142163ea8cd25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b22643fc1e8e5d621703e6d6674ee66 = $(`<div id="html_9b22643fc1e8e5d621703e6d6674ee66" style="width: 100.0%; height: 100.0%;"><b>Tulsa @ SMU</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_134d8f9f928c5fd01aa142163ea8cd25.setContent(html_9b22643fc1e8e5d621703e6d6674ee66);
+            
+        
+
+        marker_ed72a9d98bc536d8610259e14a34ac7a.bindPopup(popup_134d8f9f928c5fd01aa142163ea8cd25)
+        ;
+
+        
+    
+    
+            var marker_4b067d9c599105982186d8586b142631 = L.marker(
+                [29.7162887, -95.4093113],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_8113b7556386587a893a6f13a663af12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4b067d9c599105982186d8586b142631.setIcon(icon_8113b7556386587a893a6f13a663af12);
+        
+    
+        var popup_312550076544e210f2eb8285b8fb7f10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2f9d7fdf78943c83f2a932b5e2bedc8 = $(`<div id="html_b2f9d7fdf78943c83f2a932b5e2bedc8" style="width: 100.0%; height: 100.0%;"><b>Tulane @ Rice</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_312550076544e210f2eb8285b8fb7f10.setContent(html_b2f9d7fdf78943c83f2a932b5e2bedc8);
+            
+        
+
+        marker_4b067d9c599105982186d8586b142631.bindPopup(popup_312550076544e210f2eb8285b8fb7f10)
+        ;
+
+        
+    
+    
+            var marker_8e9ff2707d0f719451bf62eba49ab81d = L.marker(
+                [29.4169834, -98.4788143],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_5596e49a40c728e759e9dcec6bbdf954 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8e9ff2707d0f719451bf62eba49ab81d.setIcon(icon_5596e49a40c728e759e9dcec6bbdf954);
+        
+    
+        var popup_75e9319d8c669c1f54ffeb060ea077ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fcf0247b5f9005fdca582db01cb0a63 = $(`<div id="html_8fcf0247b5f9005fdca582db01cb0a63" style="width: 100.0%; height: 100.0%;"><b>East Carolina @ UTSA</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_75e9319d8c669c1f54ffeb060ea077ad.setContent(html_8fcf0247b5f9005fdca582db01cb0a63);
+            
+        
+
+        marker_8e9ff2707d0f719451bf62eba49ab81d.bindPopup(popup_75e9319d8c669c1f54ffeb060ea077ad)
+        ;
+
+        
+    
+    
+            var marker_aaa68417e4331e3cc3749749cf6632d1 = L.marker(
+                [33.2039355, -97.1592403],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_23e7ac3ce8d9b01364a323b1e114e72a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aaa68417e4331e3cc3749749cf6632d1.setIcon(icon_23e7ac3ce8d9b01364a323b1e114e72a);
+        
+    
+        var popup_78339c62a572318e73a6d4e1521baa26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ec413b8ea766549e8a96f3db331299f = $(`<div id="html_7ec413b8ea766549e8a96f3db331299f" style="width: 100.0%; height: 100.0%;"><b>Memphis @ North Texas</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_78339c62a572318e73a6d4e1521baa26.setContent(html_7ec413b8ea766549e8a96f3db331299f);
+            
+        
+
+        marker_aaa68417e4331e3cc3749749cf6632d1.bindPopup(popup_78339c62a572318e73a6d4e1521baa26)
+        ;
+
+        
+    
+    
+            var marker_a812c2f103204cffa40c149347444022 = L.marker(
+                [36.2116003, -81.685497],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_a33deef47ee44dcdb2933a3ed4a1a903 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a812c2f103204cffa40c149347444022.setIcon(icon_a33deef47ee44dcdb2933a3ed4a1a903);
+        
+    
+        var popup_90150b96b59c124fa59e97ec887f1304 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7e06fb48d573608c8056283e350b035 = $(`<div id="html_c7e06fb48d573608c8056283e350b035" style="width: 100.0%; height: 100.0%;"><b>Southern Miss @ Appalachian State</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_90150b96b59c124fa59e97ec887f1304.setContent(html_c7e06fb48d573608c8056283e350b035);
+            
+        
+
+        marker_a812c2f103204cffa40c149347444022.bindPopup(popup_90150b96b59c124fa59e97ec887f1304)
+        ;
+
+        
+    
+    
+            var marker_e16de2bfef565dff6a89dfa5c7465f04 = L.marker(
+                [33.7928031, -79.01745749999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_46e50700d24bc65c3353bcca645e079b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e16de2bfef565dff6a89dfa5c7465f04.setIcon(icon_46e50700d24bc65c3353bcca645e079b);
+        
+    
+        var popup_d37d8033992a8380560dbc62b68faa95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b8d1d69b5a998622f5d8b4ed99aa06e = $(`<div id="html_3b8d1d69b5a998622f5d8b4ed99aa06e" style="width: 100.0%; height: 100.0%;"><b>Marshall @ Coastal Carolina</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_d37d8033992a8380560dbc62b68faa95.setContent(html_3b8d1d69b5a998622f5d8b4ed99aa06e);
+            
+        
+
+        marker_e16de2bfef565dff6a89dfa5c7465f04.bindPopup(popup_d37d8033992a8380560dbc62b68faa95)
+        ;
+
+        
+    
+    
+            var marker_1b354df6fec7fbd2e07c9c05ee9574d1 = L.marker(
+                [38.4352952, -78.8729086],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_535494141fd373181a5812db05630863 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1b354df6fec7fbd2e07c9c05ee9574d1.setIcon(icon_535494141fd373181a5812db05630863);
+        
+    
+        var popup_1b835bb3ead19a3d37d537e2e20b35aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2faf11e5561a7ca1cd7c5dee36c9bf6 = $(`<div id="html_d2faf11e5561a7ca1cd7c5dee36c9bf6" style="width: 100.0%; height: 100.0%;"><b>Old Dominion @ James Madison</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_1b835bb3ead19a3d37d537e2e20b35aa.setContent(html_d2faf11e5561a7ca1cd7c5dee36c9bf6);
+            
+        
+
+        marker_1b354df6fec7fbd2e07c9c05ee9574d1.bindPopup(popup_1b835bb3ead19a3d37d537e2e20b35aa)
+        ;
+
+        
+    
+    
+            var marker_64aff3694095306d363d339cc4eb1417 = L.marker(
+                [32.5309505, -92.06603179999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_3965826478a5d41c4b093be7d9dea55d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_64aff3694095306d363d339cc4eb1417.setIcon(icon_3965826478a5d41c4b093be7d9dea55d);
+        
+    
+        var popup_12b731395f6cff63a7f08355d1632811 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_427355255bd807e8969fdc9300807d91 = $(`<div id="html_427355255bd807e8969fdc9300807d91" style="width: 100.0%; height: 100.0%;"><b>Arkansas State @ UL Monroe</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_12b731395f6cff63a7f08355d1632811.setContent(html_427355255bd807e8969fdc9300807d91);
+            
+        
+
+        marker_64aff3694095306d363d339cc4eb1417.bindPopup(popup_12b731395f6cff63a7f08355d1632811)
+        ;
+
+        
+    
+    
+            var marker_38ba9e64a4ee96e12882d1f5c27e4561 = L.marker(
+                [30.6966759, -88.1918231],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_d532ae52b94d62a94b19b18331cb4948 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_38ba9e64a4ee96e12882d1f5c27e4561.setIcon(icon_d532ae52b94d62a94b19b18331cb4948);
+        
+    
+        var popup_e04bfa3c126dc20ff4f9e9e6bfd0f333 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1891733470175a161e2b1a882c02b6c1 = $(`<div id="html_1891733470175a161e2b1a882c02b6c1" style="width: 100.0%; height: 100.0%;"><b>Louisiana @ South Alabama</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_e04bfa3c126dc20ff4f9e9e6bfd0f333.setContent(html_1891733470175a161e2b1a882c02b6c1);
+            
+        
+
+        marker_38ba9e64a4ee96e12882d1f5c27e4561.bindPopup(popup_e04bfa3c126dc20ff4f9e9e6bfd0f333)
+        ;
+
+        
+    
+    
+            var marker_d44d45c6bec6df60aaae804247bd7db5 = L.marker(
+                [29.8910195, -97.9255484],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_6ccf911f9825ed82f5c3932882909700 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d44d45c6bec6df60aaae804247bd7db5.setIcon(icon_6ccf911f9825ed82f5c3932882909700);
+        
+    
+        var popup_5f536d9f57d92690653e87c49e6fc40f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b18a15e9ae027694482abbc89a31e9c1 = $(`<div id="html_b18a15e9ae027694482abbc89a31e9c1" style="width: 100.0%; height: 100.0%;"><b>Troy @ Texas State</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_5f536d9f57d92690653e87c49e6fc40f.setContent(html_b18a15e9ae027694482abbc89a31e9c1);
+            
+        
+
+        marker_d44d45c6bec6df60aaae804247bd7db5.bindPopup(popup_5f536d9f57d92690653e87c49e6fc40f)
+        ;
+
+        
+    
+    
+            var marker_dce8c50655c241813b7ceb02e10e82d2 = L.marker(
+                [42.255885, -83.64738249999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_193044115b0b1c6114060d369cfc29ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dce8c50655c241813b7ceb02e10e82d2.setIcon(icon_193044115b0b1c6114060d369cfc29ac);
+        
+    
+        var popup_97974e7a3dcd5334412d85da59c13609 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d753754e5808a694f1cdbe0d9b39436 = $(`<div id="html_0d753754e5808a694f1cdbe0d9b39436" style="width: 100.0%; height: 100.0%;"><b>Western Michigan @ Eastern Michigan</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_97974e7a3dcd5334412d85da59c13609.setContent(html_0d753754e5808a694f1cdbe0d9b39436);
+            
+        
+
+        marker_dce8c50655c241813b7ceb02e10e82d2.bindPopup(popup_97974e7a3dcd5334412d85da59c13609)
+        ;
+
+        
+    
+    
+            var marker_4da0451e480ee8c98af84a154f4039dd = L.marker(
+                [39.3210165, -82.1029537],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_3ebf526732afc18f4275f3d5ebb6d077 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4da0451e480ee8c98af84a154f4039dd.setIcon(icon_3ebf526732afc18f4275f3d5ebb6d077);
+        
+    
+        var popup_2a521ab5d7a1fba3938d63cf5629e074 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1a14b6f758220f96b0d2992e4633f2e = $(`<div id="html_d1a14b6f758220f96b0d2992e4633f2e" style="width: 100.0%; height: 100.0%;"><b>Miami (OH) @ Ohio</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_2a521ab5d7a1fba3938d63cf5629e074.setContent(html_d1a14b6f758220f96b0d2992e4633f2e);
+            
+        
+
+        marker_4da0451e480ee8c98af84a154f4039dd.bindPopup(popup_2a521ab5d7a1fba3938d63cf5629e074)
+        ;
+
+        
+    
+    
+            var marker_afe272aedc34fbb988a04f15107dd884 = L.marker(
+                [40.5698925, -105.0884348],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_64f4f6af9b20db30127a3989732b742d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_afe272aedc34fbb988a04f15107dd884.setIcon(icon_64f4f6af9b20db30127a3989732b742d);
+        
+    
+        var popup_69f6098a3dbe2c8181e6c710b5b10259 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1772952156d963d4578d907709f4d751 = $(`<div id="html_1772952156d963d4578d907709f4d751" style="width: 100.0%; height: 100.0%;"><b>Air Force @ Colorado State</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_69f6098a3dbe2c8181e6c710b5b10259.setContent(html_1772952156d963d4578d907709f4d751);
+            
+        
+
+        marker_afe272aedc34fbb988a04f15107dd884.bindPopup(popup_69f6098a3dbe2c8181e6c710b5b10259)
+        ;
+
+        
+    
+    
+            var marker_c603214f244347adc64596c10050f846 = L.marker(
+                [39.5469709, -119.8176081],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_b4a335d8371741a97da2a4e4123d831f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c603214f244347adc64596c10050f846.setIcon(icon_b4a335d8371741a97da2a4e4123d831f);
+        
+    
+        var popup_d1d65f08ae97802488b2ddefe9f3116b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d99fdaa69e57ee1992c00c383f638971 = $(`<div id="html_d99fdaa69e57ee1992c00c383f638971" style="width: 100.0%; height: 100.0%;"><b>New Mexico @ Nevada</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_d1d65f08ae97802488b2ddefe9f3116b.setContent(html_d99fdaa69e57ee1992c00c383f638971);
+            
+        
+
+        marker_c603214f244347adc64596c10050f846.bindPopup(popup_d1d65f08ae97802488b2ddefe9f3116b)
+        ;
+
+        
+    
+    
+            var marker_469a5594730380ac34321e60705a30f0 = L.marker(
+                [21.2943297, -157.8171673],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_da8594b988a130d2fdf4cdf3b1e226ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_469a5594730380ac34321e60705a30f0.setIcon(icon_da8594b988a130d2fdf4cdf3b1e226ce);
+        
+    
+        var popup_78ab664d9cae169aa8d3b9691c124b51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af64e2daa878e9005185ba8db964a841 = $(`<div id="html_af64e2daa878e9005185ba8db964a841" style="width: 100.0%; height: 100.0%;"><b>San Jose State @ Hawai'i</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_78ab664d9cae169aa8d3b9691c124b51.setContent(html_af64e2daa878e9005185ba8db964a841);
+            
+        
+
+        marker_469a5594730380ac34321e60705a30f0.bindPopup(popup_78ab664d9cae169aa8d3b9691c124b51)
+        ;
+
+        
+    
+    
+            var marker_54fa712ebc147a2256f2bdde8e02c7b8 = L.marker(
+                [36.8144001, -119.7581518],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_d71542b6d6d39bd0ef8aa2c043e4b076 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_54fa712ebc147a2256f2bdde8e02c7b8.setIcon(icon_d71542b6d6d39bd0ef8aa2c043e4b076);
+        
+    
+        var popup_c5f6f661a197d3c46edf834ba1ff0ed0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_751141fea4837556b6e0ab7ef96635f3 = $(`<div id="html_751141fea4837556b6e0ab7ef96635f3" style="width: 100.0%; height: 100.0%;"><b>UNLV @ Fresno State</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_c5f6f661a197d3c46edf834ba1ff0ed0.setContent(html_751141fea4837556b6e0ab7ef96635f3);
+            
+        
+
+        marker_54fa712ebc147a2256f2bdde8e02c7b8.bindPopup(popup_c5f6f661a197d3c46edf834ba1ff0ed0)
+        ;
+
+        
+    
+    
+            var marker_4b946ca4eadb032006517a91638fdbfa = L.marker(
+                [43.6028444, -116.1958658],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_bba6c8fba89d2f3f2a20141b54a5c753 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4b946ca4eadb032006517a91638fdbfa.setIcon(icon_bba6c8fba89d2f3f2a20141b54a5c753);
+        
+    
+        var popup_ce56283f13fc293697238ae880d71b87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc07165a9a137f710bbc0e2ffc433e47 = $(`<div id="html_cc07165a9a137f710bbc0e2ffc433e47" style="width: 100.0%; height: 100.0%;"><b>Wyoming @ Boise State</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_ce56283f13fc293697238ae880d71b87.setContent(html_cc07165a9a137f710bbc0e2ffc433e47);
+            
+        
+
+        marker_4b946ca4eadb032006517a91638fdbfa.bindPopup(popup_ce56283f13fc293697238ae880d71b87)
+        ;
+
+        
+    
+    
+            var marker_ea8e536f7e646d2bb45249e13f87c885 = L.marker(
+                [41.3875529, -73.9640708],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_2408ffcba3059f55d2bda5adc1e79c03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ea8e536f7e646d2bb45249e13f87c885.setIcon(icon_2408ffcba3059f55d2bda5adc1e79c03);
+        
+    
+        var popup_77569ef4573c6855a0cd5462bc5add2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd19c60cd038eb4e5c3d6d643b1bc544 = $(`<div id="html_cd19c60cd038eb4e5c3d6d643b1bc544" style="width: 100.0%; height: 100.0%;"><b>UMass @ Army</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_77569ef4573c6855a0cd5462bc5add2f.setContent(html_cd19c60cd038eb4e5c3d6d643b1bc544);
+            
+        
+
+        marker_ea8e536f7e646d2bb45249e13f87c885.bindPopup(popup_77569ef4573c6855a0cd5462bc5add2f)
+        ;
+
+        
+    
+    
+            var marker_cc2a1cc35b4e2cf1a28a36f03c70e300 = L.marker(
+                [32.60220590000001, -85.4891258],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_cc6baafa770015cecdfd33ecd59afc90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cc2a1cc35b4e2cf1a28a36f03c70e300.setIcon(icon_cc6baafa770015cecdfd33ecd59afc90);
+        
+    
+        var popup_2116c9bb5255e21ec393faef0063c4ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e22a12eee1335ea59ae1ff11437454c4 = $(`<div id="html_e22a12eee1335ea59ae1ff11437454c4" style="width: 100.0%; height: 100.0%;"><b>Mississippi State @ Auburn</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_2116c9bb5255e21ec393faef0063c4ca.setContent(html_e22a12eee1335ea59ae1ff11437454c4);
+            
+        
+
+        marker_cc2a1cc35b4e2cf1a28a36f03c70e300.bindPopup(popup_2116c9bb5255e21ec393faef0063c4ca)
+        ;
+
+        
+    
+    
+            var marker_b683158d5a01941a1beb7eb1a9753b7e = L.marker(
+                [38.0227476, -84.5051762],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_ba16e305e46b8144b52d3ab548954134 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b683158d5a01941a1beb7eb1a9753b7e.setIcon(icon_ba16e305e46b8144b52d3ab548954134);
+        
+    
+        var popup_513f16097387a1cfcf761b94f1f6232e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c7c9da6d6df4a4647ddbfc55f1a4914 = $(`<div id="html_3c7c9da6d6df4a4647ddbfc55f1a4914" style="width: 100.0%; height: 100.0%;"><b>Tennessee @ Kentucky</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_513f16097387a1cfcf761b94f1f6232e.setContent(html_3c7c9da6d6df4a4647ddbfc55f1a4914);
+            
+        
+
+        marker_b683158d5a01941a1beb7eb1a9753b7e.bindPopup(popup_513f16097387a1cfcf761b94f1f6232e)
+        ;
+
+        
+    
+    
+            var marker_24ae67be4879d4445e578db3cf6b71d7 = L.marker(
+                [44.976525, -93.22454619999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_9f1164d66839864419b3ec4c2411a7c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_24ae67be4879d4445e578db3cf6b71d7.setIcon(icon_9f1164d66839864419b3ec4c2411a7c3);
+        
+    
+        var popup_006e85a5fe2aa59ae89e1ba630866def = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbc05df71416eed7722efda8ace4334c = $(`<div id="html_fbc05df71416eed7722efda8ace4334c" style="width: 100.0%; height: 100.0%;"><b>Michigan State @ Minnesota</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_006e85a5fe2aa59ae89e1ba630866def.setContent(html_fbc05df71416eed7722efda8ace4334c);
+            
+        
+
+        marker_24ae67be4879d4445e578db3cf6b71d7.bindPopup(popup_006e85a5fe2aa59ae89e1ba630866def)
+        ;
+
+        
+    
+    
+            var marker_51803b5309dfd05c9b3872b2eb949c74 = L.marker(
+                [42.0654464, -87.69249459999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_6104404896b76a30bb5a3dbbf6941f19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_51803b5309dfd05c9b3872b2eb949c74.setIcon(icon_6104404896b76a30bb5a3dbbf6941f19);
+        
+    
+        var popup_6fb39166620a4ecc0fe9c3c7f0c4208c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_221213469ca7f1a27f7adade8cd93bb9 = $(`<div id="html_221213469ca7f1a27f7adade8cd93bb9" style="width: 100.0%; height: 100.0%;"><b>Maryland @ Northwestern</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_6fb39166620a4ecc0fe9c3c7f0c4208c.setContent(html_221213469ca7f1a27f7adade8cd93bb9);
+            
+        
+
+        marker_51803b5309dfd05c9b3872b2eb949c74.bindPopup(popup_6fb39166620a4ecc0fe9c3c7f0c4208c)
+        ;
+
+        
+    
+    
+            var marker_8729f22b7a4dd8c4a628a873f4fdda88 = L.marker(
+                [40.8113202, -77.85503949999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_714d5fd3aefe351b2581dd55271be71a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8729f22b7a4dd8c4a628a873f4fdda88.setIcon(icon_714d5fd3aefe351b2581dd55271be71a);
+        
+    
+        var popup_c59f25906d1db5fdca6e92df02b3b5ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec34d55a9f7fd535600ff11f7ae0d5db = $(`<div id="html_ec34d55a9f7fd535600ff11f7ae0d5db" style="width: 100.0%; height: 100.0%;"><b>Indiana @ Penn State</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_c59f25906d1db5fdca6e92df02b3b5ee.setContent(html_ec34d55a9f7fd535600ff11f7ae0d5db);
+            
+        
+
+        marker_8729f22b7a4dd8c4a628a873f4fdda88.bindPopup(popup_c59f25906d1db5fdca6e92df02b3b5ee)
+        ;
+
+        
+    
+    
+            var marker_207aa94d8acfdcc5340290d8cbc392e0 = L.marker(
+                [30.61009189999999, -96.34010409999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_ffcd1487c888816f5c310f7b8612aa53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_207aa94d8acfdcc5340290d8cbc392e0.setIcon(icon_ffcd1487c888816f5c310f7b8612aa53);
+        
+    
+        var popup_cca74144c35b5b2bdc34a92921d672b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49d128214206687615dc20bc1c57514f = $(`<div id="html_49d128214206687615dc20bc1c57514f" style="width: 100.0%; height: 100.0%;"><b>South Carolina @ Texas A&M</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_cca74144c35b5b2bdc34a92921d672b7.setContent(html_49d128214206687615dc20bc1c57514f);
+            
+        
+
+        marker_207aa94d8acfdcc5340290d8cbc392e0.bindPopup(popup_cca74144c35b5b2bdc34a92921d672b7)
+        ;
+
+        
+    
+    
+            var marker_ee44a1ea5de2a7fabd9df655a7657ca2 = L.marker(
+                [43.0699446, -89.4126871],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_aac71448ce4c5d59eacbb33bfb2211e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ee44a1ea5de2a7fabd9df655a7657ca2.setIcon(icon_aac71448ce4c5d59eacbb33bfb2211e8);
+        
+    
+        var popup_4589dd62e9e4709a1b442b7e640c3bc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9a59118e3b31697035327e034180367 = $(`<div id="html_e9a59118e3b31697035327e034180367" style="width: 100.0%; height: 100.0%;"><b>Ohio State @ Wisconsin</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_4589dd62e9e4709a1b442b7e640c3bc7.setContent(html_e9a59118e3b31697035327e034180367);
+            
+        
+
+        marker_ee44a1ea5de2a7fabd9df655a7657ca2.bindPopup(popup_4589dd62e9e4709a1b442b7e640c3bc7)
+        ;
+
+        
+    
+    
+            var marker_b62e3e2dcb2458a8a9d5d726b895307c = L.marker(
+                [43.5776264, -84.7708509],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_ad2e6c3d9410a6674425d2725c5082df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b62e3e2dcb2458a8a9d5d726b895307c.setIcon(icon_ad2e6c3d9410a6674425d2725c5082df);
+        
+    
+        var popup_36c6e5bc574ee069e19dd5fe3b7356d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9adfc276a86be1daf2647a85ca740a26 = $(`<div id="html_9adfc276a86be1daf2647a85ca740a26" style="width: 100.0%; height: 100.0%;"><b>Northern Illinois @ Central Michigan</b><br><i>Date:</i> 2023-10-31 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_36c6e5bc574ee069e19dd5fe3b7356d9.setContent(html_9adfc276a86be1daf2647a85ca740a26);
+            
+        
+
+        marker_b62e3e2dcb2458a8a9d5d726b895307c.bindPopup(popup_36c6e5bc574ee069e19dd5fe3b7356d9)
+        ;
+
+        
+    
+    
+            var marker_1fa46bd7b44693569c6cb9163ebc5eb3 = L.marker(
+                [41.6572818, -83.61358159999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_5eb7c53de768c59579c5f03ff014dc48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1fa46bd7b44693569c6cb9163ebc5eb3.setIcon(icon_5eb7c53de768c59579c5f03ff014dc48);
+        
+    
+        var popup_ca1adb365d89ffcda637532d8b99e0bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c1961630ecbc486258cb41727950d69 = $(`<div id="html_6c1961630ecbc486258cb41727950d69" style="width: 100.0%; height: 100.0%;"><b>Buffalo @ Toledo</b><br><i>Date:</i> 2023-10-31 00:00:00<br><u>Sport:</u> NCAAF</div>`)[0];
+                popup_ca1adb365d89ffcda637532d8b99e0bd.setContent(html_6c1961630ecbc486258cb41727950d69);
+            
+        
+
+        marker_1fa46bd7b44693569c6cb9163ebc5eb3.bindPopup(popup_ca1adb365d89ffcda637532d8b99e0bd)
+        ;
+
+        
+    
+    
+            var marker_011fb614e6c5a1a0835adc0844f5a098 = L.marker(
+                [42.3663097, -71.0622259],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_23384948dff792d4150fcef68cfb4294 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_011fb614e6c5a1a0835adc0844f5a098.setIcon(icon_23384948dff792d4150fcef68cfb4294);
+        
+    
+        var popup_c9404c39a1207e8f1a6a44cecc5f1892 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d77892d497c806a43253388f1b30ba5 = $(`<div id="html_7d77892d497c806a43253388f1b30ba5" style="width: 100.0%; height: 100.0%;"><b>Anaheim Ducks @ Boston Bruins</b><br><i>Date:</i> 2023-10-26 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_c9404c39a1207e8f1a6a44cecc5f1892.setContent(html_7d77892d497c806a43253388f1b30ba5);
+            
+        
+
+        marker_011fb614e6c5a1a0835adc0844f5a098.bindPopup(popup_c9404c39a1207e8f1a6a44cecc5f1892)
+        ;
+
+        
+    
+    
+            var marker_da2b6acf68b3820b56cec0a8ed3b2745 = L.marker(
+                [35.803291, -78.72169920000002],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_bb1165d4c34628816d198304c8754728 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_da2b6acf68b3820b56cec0a8ed3b2745.setIcon(icon_bb1165d4c34628816d198304c8754728);
+        
+    
+        var popup_40bc267144edbc4527e7a4c4d726fecd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47ba52158b8e75099a711e1abe66851b = $(`<div id="html_47ba52158b8e75099a711e1abe66851b" style="width: 100.0%; height: 100.0%;"><b>Seattle Kraken @ Carolina Hurricanes</b><br><i>Date:</i> 2023-10-26 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_40bc267144edbc4527e7a4c4d726fecd.setContent(html_47ba52158b8e75099a711e1abe66851b);
+            
+        
+
+        marker_da2b6acf68b3820b56cec0a8ed3b2745.bindPopup(popup_40bc267144edbc4527e7a4c4d726fecd)
+        ;
+
+        
+    
+    
+            var marker_60507157aed6fd91859c4f5a48ce6b4f = L.marker(
+                [42.3419612, -83.05495979999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_b9ac54eb9ce37019cccc07131b2ddefe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_60507157aed6fd91859c4f5a48ce6b4f.setIcon(icon_b9ac54eb9ce37019cccc07131b2ddefe);
+        
+    
+        var popup_001d14d6c146b0574f106d5741c115a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5216456c2538b1eab49e4edfa00e2e5 = $(`<div id="html_d5216456c2538b1eab49e4edfa00e2e5" style="width: 100.0%; height: 100.0%;"><b>Winnipeg Jets @ Detroit Red Wings</b><br><i>Date:</i> 2023-10-26 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_001d14d6c146b0574f106d5741c115a4.setContent(html_d5216456c2538b1eab49e4edfa00e2e5);
+            
+        
+
+        marker_60507157aed6fd91859c4f5a48ce6b4f.bindPopup(popup_001d14d6c146b0574f106d5741c115a4)
+        ;
+
+        
+    
+    
+            var marker_255f7a58f50ac41b16563f7add4c767a = L.marker(
+                [45.4967536, -73.569831],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_f14ee548687f4f49b7564fdf5b564431 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_255f7a58f50ac41b16563f7add4c767a.setIcon(icon_f14ee548687f4f49b7564fdf5b564431);
+        
+    
+        var popup_72b0987b0b84c89a8de935b707033767 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4564fc079f4894780d57658f98381f9c = $(`<div id="html_4564fc079f4894780d57658f98381f9c" style="width: 100.0%; height: 100.0%;"><b>Columbus Blue Jackets @ Montreal Canadiens</b><br><i>Date:</i> 2023-10-26 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_72b0987b0b84c89a8de935b707033767.setContent(html_4564fc079f4894780d57658f98381f9c);
+            
+        
+
+        marker_255f7a58f50ac41b16563f7add4c767a.bindPopup(popup_72b0987b0b84c89a8de935b707033767)
+        ;
+
+        
+    
+    
+            var marker_fffac854e4aea63f50c863eb947cdf22 = L.marker(
+                [39.9011799, -75.17197159999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_7e0828f5c1f5ca70d02edf9652889d12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_fffac854e4aea63f50c863eb947cdf22.setIcon(icon_7e0828f5c1f5ca70d02edf9652889d12);
+        
+    
+        var popup_f5aec14dae983a41a29236347cb3f781 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_422669da902a77ff06173226bd099422 = $(`<div id="html_422669da902a77ff06173226bd099422" style="width: 100.0%; height: 100.0%;"><b>Minnesota Wild @ Philadelphia Flyers</b><br><i>Date:</i> 2023-10-26 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_f5aec14dae983a41a29236347cb3f781.setContent(html_422669da902a77ff06173226bd099422);
+            
+        
+
+        marker_fffac854e4aea63f50c863eb947cdf22.bindPopup(popup_f5aec14dae983a41a29236347cb3f781)
+        ;
+
+        
+    
+    
+            var marker_4b12107c4f2c281becdb2d2d6d130d28 = L.marker(
+                [40.4393097, -79.98955289999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_f4631ee09c7a2bcf400980fa1a59be8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_4b12107c4f2c281becdb2d2d6d130d28.setIcon(icon_f4631ee09c7a2bcf400980fa1a59be8b);
+        
+    
+        var popup_3edc1a00e7a57f55acb44fb8737f35f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbdf1ad2aac7fe77fefd08a6283022d2 = $(`<div id="html_bbdf1ad2aac7fe77fefd08a6283022d2" style="width: 100.0%; height: 100.0%;"><b>Colorado Avalanche @ Pittsburgh Penguins</b><br><i>Date:</i> 2023-10-26 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_3edc1a00e7a57f55acb44fb8737f35f5.setContent(html_bbdf1ad2aac7fe77fefd08a6283022d2);
+            
+        
+
+        marker_4b12107c4f2c281becdb2d2d6d130d28.bindPopup(popup_3edc1a00e7a57f55acb44fb8737f35f5)
+        ;
+
+        
+    
+    
+            var marker_0f6564c0b15000b7b36ab64663a0617a = L.marker(
+                [27.9427459, -82.4517441],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_d846695a8de67c10e48d54ec224d73f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_0f6564c0b15000b7b36ab64663a0617a.setIcon(icon_d846695a8de67c10e48d54ec224d73f0);
+        
+    
+        var popup_69eff0d9bbe8e0d3e6da7bfd94b80ae3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea996b1303e6ef2a58aa73d69a62453a = $(`<div id="html_ea996b1303e6ef2a58aa73d69a62453a" style="width: 100.0%; height: 100.0%;"><b>San Jose Sharks @ Tampa Bay Lightning</b><br><i>Date:</i> 2023-10-26 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_69eff0d9bbe8e0d3e6da7bfd94b80ae3.setContent(html_ea996b1303e6ef2a58aa73d69a62453a);
+            
+        
+
+        marker_0f6564c0b15000b7b36ab64663a0617a.bindPopup(popup_69eff0d9bbe8e0d3e6da7bfd94b80ae3)
+        ;
+
+        
+    
+    
+            var marker_1d62894eab5cf5c456549c97cafa21cd = L.marker(
+                [40.7228919, -73.5905136],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_b13fed1038bc503e249167374492054a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_1d62894eab5cf5c456549c97cafa21cd.setIcon(icon_b13fed1038bc503e249167374492054a);
+        
+    
+        var popup_3a7e3fe06cef68147c188a3907c957d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a99bb787a305849d6d5b155f1aa2cec = $(`<div id="html_9a99bb787a305849d6d5b155f1aa2cec" style="width: 100.0%; height: 100.0%;"><b>Ottawa Senators @ New York Islanders</b><br><i>Date:</i> 2023-10-26 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_3a7e3fe06cef68147c188a3907c957d5.setContent(html_9a99bb787a305849d6d5b155f1aa2cec);
+            
+        
+
+        marker_1d62894eab5cf5c456549c97cafa21cd.bindPopup(popup_3a7e3fe06cef68147c188a3907c957d5)
+        ;
+
+        
+    
+    
+            var marker_1c781c30acfe71b5610e0ba664122ae4 = L.marker(
+                [32.7903143, -96.810148],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_46dfb7ad627ff4e1a603621f3c8d04f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_1c781c30acfe71b5610e0ba664122ae4.setIcon(icon_46dfb7ad627ff4e1a603621f3c8d04f8);
+        
+    
+        var popup_9123b0b57ac6d71deaa1cbce14a63314 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f3d237ff4979dd49c5230bb1a01ec29 = $(`<div id="html_6f3d237ff4979dd49c5230bb1a01ec29" style="width: 100.0%; height: 100.0%;"><b>Toronto Maple Leafs @ Dallas Stars</b><br><i>Date:</i> 2023-10-26 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_9123b0b57ac6d71deaa1cbce14a63314.setContent(html_6f3d237ff4979dd49c5230bb1a01ec29);
+            
+        
+
+        marker_1c781c30acfe71b5610e0ba664122ae4.bindPopup(popup_9123b0b57ac6d71deaa1cbce14a63314)
+        ;
+
+        
+    
+    
+            var marker_ca529c304dcdee6982c6f90c75727e7b = L.marker(
+                [51.0374456, -114.0518731],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_d8fc45f55224446e240b9180e764a49a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_ca529c304dcdee6982c6f90c75727e7b.setIcon(icon_d8fc45f55224446e240b9180e764a49a);
+        
+    
+        var popup_4ab16a3c8b80444ceae8cd9c79165ccc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_edb769b9f372bed84daa62f51a672b3c = $(`<div id="html_edb769b9f372bed84daa62f51a672b3c" style="width: 100.0%; height: 100.0%;"><b>St. Louis Blues @ Calgary Flames</b><br><i>Date:</i> 2023-10-26 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_4ab16a3c8b80444ceae8cd9c79165ccc.setContent(html_edb769b9f372bed84daa62f51a672b3c);
+            
+        
+
+        marker_ca529c304dcdee6982c6f90c75727e7b.bindPopup(popup_4ab16a3c8b80444ceae8cd9c79165ccc)
+        ;
+
+        
+    
+    
+            var marker_d909705d792bce0dd9f16a5443e4641e = L.marker(
+                [53.546775, -113.4963279],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_047eb43cbfab1da92b9bd8eafccfd531 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_d909705d792bce0dd9f16a5443e4641e.setIcon(icon_047eb43cbfab1da92b9bd8eafccfd531);
+        
+    
+        var popup_be95881e7cc2e867910907d188775063 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6221e02373ef2656c9058e4efcb2e9b9 = $(`<div id="html_6221e02373ef2656c9058e4efcb2e9b9" style="width: 100.0%; height: 100.0%;"><b>New York Rangers @ Edmonton Oilers</b><br><i>Date:</i> 2023-10-26 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_be95881e7cc2e867910907d188775063.setContent(html_6221e02373ef2656c9058e4efcb2e9b9);
+            
+        
+
+        marker_d909705d792bce0dd9f16a5443e4641e.bindPopup(popup_be95881e7cc2e867910907d188775063)
+        ;
+
+        
+    
+    
+            var marker_dfda5e76a21bb82deda845bb719c235b = L.marker(
+                [36.102812, -115.178195],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_aceb998dd3e48220c683ad8ead39c7c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_dfda5e76a21bb82deda845bb719c235b.setIcon(icon_aceb998dd3e48220c683ad8ead39c7c3);
+        
+    
+        var popup_999c5864c92fc28697b0692c0512822b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5ef75ebba40cc566d0674c413061204 = $(`<div id="html_f5ef75ebba40cc566d0674c413061204" style="width: 100.0%; height: 100.0%;"><b>Chicago Blackhawks @ Vegas Golden Knights</b><br><i>Date:</i> 2023-10-27 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_999c5864c92fc28697b0692c0512822b.setContent(html_f5ef75ebba40cc566d0674c413061204);
+            
+        
+
+        marker_dfda5e76a21bb82deda845bb719c235b.bindPopup(popup_999c5864c92fc28697b0692c0512822b)
+        ;
+
+        
+    
+    
+            var marker_3ba1f22d0feafbf17454482f4a45ab70 = L.marker(
+                [35.803291, -78.72169920000002],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_1ae832145960c73833c6d8b10f79d747 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_3ba1f22d0feafbf17454482f4a45ab70.setIcon(icon_1ae832145960c73833c6d8b10f79d747);
+        
+    
+        var popup_78e8ec02f9692a1922ae153a5245589b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68b3553ad792f5b55db18c836890309f = $(`<div id="html_68b3553ad792f5b55db18c836890309f" style="width: 100.0%; height: 100.0%;"><b>San Jose Sharks @ Carolina Hurricanes</b><br><i>Date:</i> 2023-10-27 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_78e8ec02f9692a1922ae153a5245589b.setContent(html_68b3553ad792f5b55db18c836890309f);
+            
+        
+
+        marker_3ba1f22d0feafbf17454482f4a45ab70.bindPopup(popup_78e8ec02f9692a1922ae153a5245589b)
+        ;
+
+        
+    
+    
+            var marker_9b1c1a4be5c33b8e17cc8bcd80341186 = L.marker(
+                [40.7335415, -74.1710227],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_627e26d938b20ad51b16754f4841f992 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_9b1c1a4be5c33b8e17cc8bcd80341186.setIcon(icon_627e26d938b20ad51b16754f4841f992);
+        
+    
+        var popup_d9141ea00c12b98943bec88770c15f19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25db2a81b8927053b5263e65019bca70 = $(`<div id="html_25db2a81b8927053b5263e65019bca70" style="width: 100.0%; height: 100.0%;"><b>Buffalo Sabres @ New Jersey Devils</b><br><i>Date:</i> 2023-10-27 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_d9141ea00c12b98943bec88770c15f19.setContent(html_25db2a81b8927053b5263e65019bca70);
+            
+        
+
+        marker_9b1c1a4be5c33b8e17cc8bcd80341186.bindPopup(popup_d9141ea00c12b98943bec88770c15f19)
+        ;
+
+        
+    
+    
+            var marker_402ed5169505c0b2912e3d9b8687b6f7 = L.marker(
+                [38.8980058, -77.0210022],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_f6dbcc05ccf0ed8b1edfac6732d43c61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_402ed5169505c0b2912e3d9b8687b6f7.setIcon(icon_f6dbcc05ccf0ed8b1edfac6732d43c61);
+        
+    
+        var popup_2224092e286dc4db611623a7e154cc67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b81b9882bebb88afda863f3ad645bd18 = $(`<div id="html_b81b9882bebb88afda863f3ad645bd18" style="width: 100.0%; height: 100.0%;"><b>Minnesota Wild @ Washington Capitals</b><br><i>Date:</i> 2023-10-27 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_2224092e286dc4db611623a7e154cc67.setContent(html_b81b9882bebb88afda863f3ad645bd18);
+            
+        
+
+        marker_402ed5169505c0b2912e3d9b8687b6f7.bindPopup(popup_2224092e286dc4db611623a7e154cc67)
+        ;
+
+        
+    
+    
+            var marker_740ab7d70d3df309e7da14774abcdc79 = L.marker(
+                [33.5319945, -112.2613146],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_841b4022c62a8c9ce2dd4789991009a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_740ab7d70d3df309e7da14774abcdc79.setIcon(icon_841b4022c62a8c9ce2dd4789991009a3);
+        
+    
+        var popup_0f94d46aeb119bda473f85b711ca6d59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d78945ae5c89216a7360f37fbf6733cd = $(`<div id="html_d78945ae5c89216a7360f37fbf6733cd" style="width: 100.0%; height: 100.0%;"><b>Los Angeles Kings @ Arizona Coyotes</b><br><i>Date:</i> 2023-10-27 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_0f94d46aeb119bda473f85b711ca6d59.setContent(html_d78945ae5c89216a7360f37fbf6733cd);
+            
+        
+
+        marker_740ab7d70d3df309e7da14774abcdc79.bindPopup(popup_0f94d46aeb119bda473f85b711ca6d59)
+        ;
+
+        
+    
+    
+            var marker_08e2a004a0d4f70394a6725a2ff88538 = L.marker(
+                [49.2777744, -123.1085205],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_a692ff6d3de107e6bc5f2a49c0a52af6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_08e2a004a0d4f70394a6725a2ff88538.setIcon(icon_a692ff6d3de107e6bc5f2a49c0a52af6);
+        
+    
+        var popup_1454140110fdd0f9017a9a6b30b00d94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d139a1019b4aaa6da12553cc72cf18a6 = $(`<div id="html_d139a1019b4aaa6da12553cc72cf18a6" style="width: 100.0%; height: 100.0%;"><b>St. Louis Blues @ Vancouver Canucks</b><br><i>Date:</i> 2023-10-27 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_1454140110fdd0f9017a9a6b30b00d94.setContent(html_d139a1019b4aaa6da12553cc72cf18a6);
+            
+        
+
+        marker_08e2a004a0d4f70394a6725a2ff88538.bindPopup(popup_1454140110fdd0f9017a9a6b30b00d94)
+        ;
+
+        
+    
+    
+            var marker_f64aae3afac5420a3fa4e13d49d0b4be = L.marker(
+                [39.9011799, -75.17197159999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_1e2884137a40c8ef1edad60fc7e60678 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f64aae3afac5420a3fa4e13d49d0b4be.setIcon(icon_1e2884137a40c8ef1edad60fc7e60678);
+        
+    
+        var popup_1a02eef37c0186eaff60ff8d7cf0ed41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2cd360c35932f04c3538a06d5abb6943 = $(`<div id="html_2cd360c35932f04c3538a06d5abb6943" style="width: 100.0%; height: 100.0%;"><b>Anaheim Ducks @ Philadelphia Flyers</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_1a02eef37c0186eaff60ff8d7cf0ed41.setContent(html_2cd360c35932f04c3538a06d5abb6943);
+            
+        
+
+        marker_f64aae3afac5420a3fa4e13d49d0b4be.bindPopup(popup_1a02eef37c0186eaff60ff8d7cf0ed41)
+        ;
+
+        
+    
+    
+            var marker_a9245a1eb55261673ba643e0df80089c = L.marker(
+                [26.1606262, -80.3162634],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_76e27f2e3f335a342db1d117af27a7f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_a9245a1eb55261673ba643e0df80089c.setIcon(icon_76e27f2e3f335a342db1d117af27a7f5);
+        
+    
+        var popup_2f94880f192d026aee554d4b9f7deff8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a769b797917c9b3ada364ad7d651351 = $(`<div id="html_3a769b797917c9b3ada364ad7d651351" style="width: 100.0%; height: 100.0%;"><b>Seattle Kraken @ Florida Panthers</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_2f94880f192d026aee554d4b9f7deff8.setContent(html_3a769b797917c9b3ada364ad7d651351);
+            
+        
+
+        marker_a9245a1eb55261673ba643e0df80089c.bindPopup(popup_2f94880f192d026aee554d4b9f7deff8)
+        ;
+
+        
+    
+    
+            var marker_64b888488a8a2c1697bd909cff3c3cde = L.marker(
+                [42.3663097, -71.0622259],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_f833f6774acbfad9c2209fce4111b64a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_64b888488a8a2c1697bd909cff3c3cde.setIcon(icon_f833f6774acbfad9c2209fce4111b64a);
+        
+    
+        var popup_fb536569ea2e3ffda1d89f5f2bb127d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d91feab7f8775a625d3ce91762e6a96 = $(`<div id="html_0d91feab7f8775a625d3ce91762e6a96" style="width: 100.0%; height: 100.0%;"><b>Detroit Red Wings @ Boston Bruins</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_fb536569ea2e3ffda1d89f5f2bb127d4.setContent(html_0d91feab7f8775a625d3ce91762e6a96);
+            
+        
+
+        marker_64b888488a8a2c1697bd909cff3c3cde.bindPopup(popup_fb536569ea2e3ffda1d89f5f2bb127d4)
+        ;
+
+        
+    
+    
+            var marker_fca1657ec612772808fae453f6014eb8 = L.marker(
+                [39.9693396, -83.00625819999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_2809880f91abbee57cb3f25f2cf531cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_fca1657ec612772808fae453f6014eb8.setIcon(icon_2809880f91abbee57cb3f25f2cf531cb);
+        
+    
+        var popup_1966f94b05d322723ea4c56ba421a8d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8fa28a5454eab7a23ef0cbe0e3fd187 = $(`<div id="html_e8fa28a5454eab7a23ef0cbe0e3fd187" style="width: 100.0%; height: 100.0%;"><b>New York Islanders @ Columbus Blue Jackets</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_1966f94b05d322723ea4c56ba421a8d8.setContent(html_e8fa28a5454eab7a23ef0cbe0e3fd187);
+            
+        
+
+        marker_fca1657ec612772808fae453f6014eb8.bindPopup(popup_1966f94b05d322723ea4c56ba421a8d8)
+        ;
+
+        
+    
+    
+            var marker_b0c33a6ec3f21c5fe7f1c8392e0cef9b = L.marker(
+                [45.4967536, -73.569831],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_fd4ee143d2fd857a63c983fd1950a3aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b0c33a6ec3f21c5fe7f1c8392e0cef9b.setIcon(icon_fd4ee143d2fd857a63c983fd1950a3aa);
+        
+    
+        var popup_a518e618f726bd9ebdfe3193969574fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9c88ffed90e17c718b8218c232ea893 = $(`<div id="html_a9c88ffed90e17c718b8218c232ea893" style="width: 100.0%; height: 100.0%;"><b>Winnipeg Jets @ Montreal Canadiens</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_a518e618f726bd9ebdfe3193969574fd.setContent(html_a9c88ffed90e17c718b8218c232ea893);
+            
+        
+
+        marker_b0c33a6ec3f21c5fe7f1c8392e0cef9b.bindPopup(popup_a518e618f726bd9ebdfe3193969574fd)
+        ;
+
+        
+    
+    
+            var marker_97e982c1589949a35a4fac0b31e6aa5b = L.marker(
+                [36.1591781, -86.778506],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_8e466e0c62854581fbdc6e41323b667d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_97e982c1589949a35a4fac0b31e6aa5b.setIcon(icon_8e466e0c62854581fbdc6e41323b667d);
+        
+    
+        var popup_da87e7362e369c16e27f649f542d5d2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24c619dc91f8b401e8105d613b518182 = $(`<div id="html_24c619dc91f8b401e8105d613b518182" style="width: 100.0%; height: 100.0%;"><b>Toronto Maple Leafs @ Nashville Predators</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_da87e7362e369c16e27f649f542d5d2f.setContent(html_24c619dc91f8b401e8105d613b518182);
+            
+        
+
+        marker_97e982c1589949a35a4fac0b31e6aa5b.bindPopup(popup_da87e7362e369c16e27f649f542d5d2f)
+        ;
+
+        
+    
+    
+            var marker_eff58eb6e81304026e63fc5b4edc5264 = L.marker(
+                [40.4393097, -79.98955289999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_16e087a3e6f56273fbe4dee7611204e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_eff58eb6e81304026e63fc5b4edc5264.setIcon(icon_16e087a3e6f56273fbe4dee7611204e4);
+        
+    
+        var popup_65cd7c6df4cbc92b6a675ab97a3cc725 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95430731f138d180629937f07beb1164 = $(`<div id="html_95430731f138d180629937f07beb1164" style="width: 100.0%; height: 100.0%;"><b>Ottawa Senators @ Pittsburgh Penguins</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_65cd7c6df4cbc92b6a675ab97a3cc725.setContent(html_95430731f138d180629937f07beb1164);
+            
+        
+
+        marker_eff58eb6e81304026e63fc5b4edc5264.bindPopup(popup_65cd7c6df4cbc92b6a675ab97a3cc725)
+        ;
+
+        
+    
+    
+            var marker_adb1aaecf7c500c47a8c48b64b42ce80 = L.marker(
+                [49.2777744, -123.1085205],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_e1b58379ac2b3f1e35e920d25acb8f1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_adb1aaecf7c500c47a8c48b64b42ce80.setIcon(icon_e1b58379ac2b3f1e35e920d25acb8f1d);
+        
+    
+        var popup_d318ba10d77cf1965506864431a72f04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95b726beffdc9ad8da6ce7f135a27958 = $(`<div id="html_95b726beffdc9ad8da6ce7f135a27958" style="width: 100.0%; height: 100.0%;"><b>New York Rangers @ Vancouver Canucks</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_d318ba10d77cf1965506864431a72f04.setContent(html_95b726beffdc9ad8da6ce7f135a27958);
+            
+        
+
+        marker_adb1aaecf7c500c47a8c48b64b42ce80.bindPopup(popup_d318ba10d77cf1965506864431a72f04)
+        ;
+
+        
+    
+    
+            var marker_253e29d285dc47858a0f48fb649ebc2d = L.marker(
+                [34.0424147, -118.2660697],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_d42d6ad5da85c34e640fe305fbcd3b67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_253e29d285dc47858a0f48fb649ebc2d.setIcon(icon_d42d6ad5da85c34e640fe305fbcd3b67);
+        
+    
+        var popup_354b240447cb78ac0962e726c623848d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_399044c1c72c3ba359dd167b7d8cc241 = $(`<div id="html_399044c1c72c3ba359dd167b7d8cc241" style="width: 100.0%; height: 100.0%;"><b>Vegas Golden Knights @ Los Angeles Kings</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_354b240447cb78ac0962e726c623848d.setContent(html_399044c1c72c3ba359dd167b7d8cc241);
+            
+        
+
+        marker_253e29d285dc47858a0f48fb649ebc2d.bindPopup(popup_354b240447cb78ac0962e726c623848d)
+        ;
+
+        
+    
+    
+            var marker_5e49619a633854ba8416982061d6411f = L.marker(
+                [42.8746893, -78.8753128],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_7fc5764738387865a95d512da48e58f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_5e49619a633854ba8416982061d6411f.setIcon(icon_7fc5764738387865a95d512da48e58f3);
+        
+    
+        var popup_f469d895adb91913ff40ee61275c48f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_745bef7ebcfbe4560acd1b1c5829d83f = $(`<div id="html_745bef7ebcfbe4560acd1b1c5829d83f" style="width: 100.0%; height: 100.0%;"><b>Colorado Avalanche @ Buffalo Sabres</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_f469d895adb91913ff40ee61275c48f1.setContent(html_745bef7ebcfbe4560acd1b1c5829d83f);
+            
+        
+
+        marker_5e49619a633854ba8416982061d6411f.bindPopup(popup_f469d895adb91913ff40ee61275c48f1)
+        ;
+
+        
+    
+    
+            var marker_45e4ccb94979462da6e92ef79df4c121 = L.marker(
+                [40.7335415, -74.1710227],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_2aa69ace6f1bc3ab93064ed4efa84fe1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_45e4ccb94979462da6e92ef79df4c121.setIcon(icon_2aa69ace6f1bc3ab93064ed4efa84fe1);
+        
+    
+        var popup_f78a6b12de08d4694864d07159660eb9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5ac413aa8b2eb8f5d0a7a7cec7a396b = $(`<div id="html_c5ac413aa8b2eb8f5d0a7a7cec7a396b" style="width: 100.0%; height: 100.0%;"><b>Minnesota Wild @ New Jersey Devils</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_f78a6b12de08d4694864d07159660eb9.setContent(html_c5ac413aa8b2eb8f5d0a7a7cec7a396b);
+            
+        
+
+        marker_45e4ccb94979462da6e92ef79df4c121.bindPopup(popup_f78a6b12de08d4694864d07159660eb9)
+        ;
+
+        
+    
+    
+            var marker_1bb2673ec3aaf3c5150f4be254c58a3b = L.marker(
+                [38.8980058, -77.0210022],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_319e594336a6676aa1fcf6494d47292c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_1bb2673ec3aaf3c5150f4be254c58a3b.setIcon(icon_319e594336a6676aa1fcf6494d47292c);
+        
+    
+        var popup_b9907f842508342ac5fb2966751622d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11b1a8e7557566ac5f6085377eeeece1 = $(`<div id="html_11b1a8e7557566ac5f6085377eeeece1" style="width: 100.0%; height: 100.0%;"><b>San Jose Sharks @ Washington Capitals</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_b9907f842508342ac5fb2966751622d9.setContent(html_11b1a8e7557566ac5f6085377eeeece1);
+            
+        
+
+        marker_1bb2673ec3aaf3c5150f4be254c58a3b.bindPopup(popup_b9907f842508342ac5fb2966751622d9)
+        ;
+
+        
+    
+    
+            var marker_b435355321ffeae1e36037f914600a68 = L.marker(
+                [53.5576851, -113.4762426],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_5ca2d76c22af1810a3088ae6a3afa203 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b435355321ffeae1e36037f914600a68.setIcon(icon_5ca2d76c22af1810a3088ae6a3afa203);
+        
+    
+        var popup_00f99eb521dfffa7f3132f5637ba5667 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_748579c2917f6590d1d37643a9ba759b = $(`<div id="html_748579c2917f6590d1d37643a9ba759b" style="width: 100.0%; height: 100.0%;"><b>Calgary Flames @ Edmonton Oilers</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_00f99eb521dfffa7f3132f5637ba5667.setContent(html_748579c2917f6590d1d37643a9ba759b);
+            
+        
+
+        marker_b435355321ffeae1e36037f914600a68.bindPopup(popup_00f99eb521dfffa7f3132f5637ba5667)
+        ;
+
+        
+    
+    
+            var marker_09d17fe2dc0234147c4a40b3d593322c = L.marker(
+                [42.3663097, -71.0622259],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_011d17efda2862066f0e39c893390acb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_09d17fe2dc0234147c4a40b3d593322c.setIcon(icon_011d17efda2862066f0e39c893390acb);
+        
+    
+        var popup_480f9fb0f83b5906a45da9c58d1ebdce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79401a774f5063488dfed64228187cef = $(`<div id="html_79401a774f5063488dfed64228187cef" style="width: 100.0%; height: 100.0%;"><b>Florida Panthers @ Boston Bruins</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_480f9fb0f83b5906a45da9c58d1ebdce.setContent(html_79401a774f5063488dfed64228187cef);
+            
+        
+
+        marker_09d17fe2dc0234147c4a40b3d593322c.bindPopup(popup_480f9fb0f83b5906a45da9c58d1ebdce)
+        ;
+
+        
+    
+    
+            var marker_7ed8727d868fa701fae10a8feaa3832d = L.marker(
+                [39.9011799, -75.17197159999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_d031124a724295ddea127c5d796e9ebe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_7ed8727d868fa701fae10a8feaa3832d.setIcon(icon_d031124a724295ddea127c5d796e9ebe);
+        
+    
+        var popup_cf44ca1e2a3c2a28d6949597b4ff1a2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b561c3e140624d5a2243be5adea25a9 = $(`<div id="html_4b561c3e140624d5a2243be5adea25a9" style="width: 100.0%; height: 100.0%;"><b>Carolina Hurricanes @ Philadelphia Flyers</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_cf44ca1e2a3c2a28d6949597b4ff1a2e.setContent(html_4b561c3e140624d5a2243be5adea25a9);
+            
+        
+
+        marker_7ed8727d868fa701fae10a8feaa3832d.bindPopup(popup_cf44ca1e2a3c2a28d6949597b4ff1a2e)
+        ;
+
+        
+    
+    
+            var marker_3fb544144c2a9b1858dc25f5ed2d94bc = L.marker(
+                [40.4393097, -79.98955289999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_f742dd6bff0c3605717819766b6386a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_3fb544144c2a9b1858dc25f5ed2d94bc.setIcon(icon_f742dd6bff0c3605717819766b6386a4);
+        
+    
+        var popup_e7239a25885e5bd2125e11acf0f6f4a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ceb5633ab4029dbd43391749abecb626 = $(`<div id="html_ceb5633ab4029dbd43391749abecb626" style="width: 100.0%; height: 100.0%;"><b>Anaheim Ducks @ Pittsburgh Penguins</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_e7239a25885e5bd2125e11acf0f6f4a6.setContent(html_ceb5633ab4029dbd43391749abecb626);
+            
+        
+
+        marker_3fb544144c2a9b1858dc25f5ed2d94bc.bindPopup(popup_e7239a25885e5bd2125e11acf0f6f4a6)
+        ;
+
+        
+    
+    
+            var marker_4053229e975353f43d0da149c46ac200 = L.marker(
+                [27.9427459, -82.4517441],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_140fbf3f7e01a2f0b387d13e9d4fbe88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_4053229e975353f43d0da149c46ac200.setIcon(icon_140fbf3f7e01a2f0b387d13e9d4fbe88);
+        
+    
+        var popup_24e88e96f5bd3258535ce7f4b738a6fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_617153f57e3723845a071d5b362a0689 = $(`<div id="html_617153f57e3723845a071d5b362a0689" style="width: 100.0%; height: 100.0%;"><b>Seattle Kraken @ Tampa Bay Lightning</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_24e88e96f5bd3258535ce7f4b738a6fa.setContent(html_617153f57e3723845a071d5b362a0689);
+            
+        
+
+        marker_4053229e975353f43d0da149c46ac200.bindPopup(popup_24e88e96f5bd3258535ce7f4b738a6fa)
+        ;
+
+        
+    
+    
+            var marker_6f78c66ba4a402c4b18136a34784d662 = L.marker(
+                [40.7228919, -73.5905136],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_2d1104a9cc7b2410fccc5400374f6bc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_6f78c66ba4a402c4b18136a34784d662.setIcon(icon_2d1104a9cc7b2410fccc5400374f6bc9);
+        
+    
+        var popup_49cc4328d9067e709c14f7a9ec0f86a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61826eb0bbe1fdc4388f65325c8ed874 = $(`<div id="html_61826eb0bbe1fdc4388f65325c8ed874" style="width: 100.0%; height: 100.0%;"><b>Detroit Red Wings @ New York Islanders</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_49cc4328d9067e709c14f7a9ec0f86a0.setContent(html_61826eb0bbe1fdc4388f65325c8ed874);
+            
+        
+
+        marker_6f78c66ba4a402c4b18136a34784d662.bindPopup(popup_49cc4328d9067e709c14f7a9ec0f86a0)
+        ;
+
+        
+    
+    
+            var marker_ac7fb4c45a8e5244841a14425e6944db = L.marker(
+                [49.8928544, -97.1441321],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_a82a231e034f7a5f21ffb582f4ff5c2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_ac7fb4c45a8e5244841a14425e6944db.setIcon(icon_a82a231e034f7a5f21ffb582f4ff5c2c);
+        
+    
+        var popup_40c4ffa971e5ba5fd26459e2acf2169d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a0662d86c0be4591f7d25ee6799e41b = $(`<div id="html_3a0662d86c0be4591f7d25ee6799e41b" style="width: 100.0%; height: 100.0%;"><b>New York Rangers @ Winnipeg Jets</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_40c4ffa971e5ba5fd26459e2acf2169d.setContent(html_3a0662d86c0be4591f7d25ee6799e41b);
+            
+        
+
+        marker_ac7fb4c45a8e5244841a14425e6944db.bindPopup(popup_40c4ffa971e5ba5fd26459e2acf2169d)
+        ;
+
+        
+    
+    
+            var marker_70eb872f0418a535cc5c9859e93fac28 = L.marker(
+                [32.7903143, -96.810148],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_693f7c08e043eb74f7f6079ff7cbbbb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_70eb872f0418a535cc5c9859e93fac28.setIcon(icon_693f7c08e043eb74f7f6079ff7cbbbb1);
+        
+    
+        var popup_9c2f44c7acbb7a99a8350ac1e33da993 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f5f21de0be90f0bd7e7539de4d6b41f = $(`<div id="html_3f5f21de0be90f0bd7e7539de4d6b41f" style="width: 100.0%; height: 100.0%;"><b>Columbus Blue Jackets @ Dallas Stars</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_9c2f44c7acbb7a99a8350ac1e33da993.setContent(html_3f5f21de0be90f0bd7e7539de4d6b41f);
+            
+        
+
+        marker_70eb872f0418a535cc5c9859e93fac28.bindPopup(popup_9c2f44c7acbb7a99a8350ac1e33da993)
+        ;
+
+        
+    
+    
+            var marker_224693a57b64ca50120eb33dab021800 = L.marker(
+                [33.5319945, -112.2613146],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_6e90acfa2eb58008a0d4d85912f025fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_224693a57b64ca50120eb33dab021800.setIcon(icon_6e90acfa2eb58008a0d4d85912f025fb);
+        
+    
+        var popup_84f7c97ca1b7c8ac518ff5481b04c2f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1bd1c7177a9be3aa62e6450d800f28e9 = $(`<div id="html_1bd1c7177a9be3aa62e6450d800f28e9" style="width: 100.0%; height: 100.0%;"><b>Chicago Blackhawks @ Arizona Coyotes</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_84f7c97ca1b7c8ac518ff5481b04c2f8.setContent(html_1bd1c7177a9be3aa62e6450d800f28e9);
+            
+        
+
+        marker_224693a57b64ca50120eb33dab021800.bindPopup(popup_84f7c97ca1b7c8ac518ff5481b04c2f8)
+        ;
+
+        
+    
+    
+            var marker_683eb9a4dbee2c9db17a7b8a066bf9d7 = L.marker(
+                [36.102812, -115.178195],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_77b09c5928248454c221200f7c8bbc55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_683eb9a4dbee2c9db17a7b8a066bf9d7.setIcon(icon_77b09c5928248454c221200f7c8bbc55);
+        
+    
+        var popup_61755a897ded24f34b842bc676c22a98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7afdc507a35caac8e8399d5492b454d0 = $(`<div id="html_7afdc507a35caac8e8399d5492b454d0" style="width: 100.0%; height: 100.0%;"><b>Montreal Canadiens @ Vegas Golden Knights</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_61755a897ded24f34b842bc676c22a98.setContent(html_7afdc507a35caac8e8399d5492b454d0);
+            
+        
+
+        marker_683eb9a4dbee2c9db17a7b8a066bf9d7.bindPopup(popup_61755a897ded24f34b842bc676c22a98)
+        ;
+
+        
+    
+    
+            var marker_4f92ab8339d481bb57f0810b7eec3b14 = L.marker(
+                [43.6431888, -79.37964690000001],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_9bd2b52f9beca294245b35d47e0a3412 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_4f92ab8339d481bb57f0810b7eec3b14.setIcon(icon_9bd2b52f9beca294245b35d47e0a3412);
+        
+    
+        var popup_b1766c98a47e6c29ca183089a1949704 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_615874b159ea8af4ad1f3f8425018570 = $(`<div id="html_615874b159ea8af4ad1f3f8425018570" style="width: 100.0%; height: 100.0%;"><b>Los Angeles Kings @ Toronto Maple Leafs</b><br><i>Date:</i> 2023-10-31 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_b1766c98a47e6c29ca183089a1949704.setContent(html_615874b159ea8af4ad1f3f8425018570);
+            
+        
+
+        marker_4f92ab8339d481bb57f0810b7eec3b14.bindPopup(popup_b1766c98a47e6c29ca183089a1949704)
+        ;
+
+        
+    
+    
+            var marker_4103255ded4e3e33b5e3ae82b67a6365 = L.marker(
+                [49.2777744, -123.1085205],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_e7f83f601c0d780ba53081381ab4691c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_4103255ded4e3e33b5e3ae82b67a6365.setIcon(icon_e7f83f601c0d780ba53081381ab4691c);
+        
+    
+        var popup_3468f9ee1445f68a038a002b4a2fbdec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03a1804805970cfc3a869ed633b5d9cb = $(`<div id="html_03a1804805970cfc3a869ed633b5d9cb" style="width: 100.0%; height: 100.0%;"><b>Nashville Predators @ Vancouver Canucks</b><br><i>Date:</i> 2023-10-31 00:00:00<br><u>Sport:</u> NHL</div>`)[0];
+                popup_3468f9ee1445f68a038a002b4a2fbdec.setContent(html_03a1804805970cfc3a869ed633b5d9cb);
+            
+        
+
+        marker_4103255ded4e3e33b5e3ae82b67a6365.bindPopup(popup_3468f9ee1445f68a038a002b4a2fbdec)
+        ;
+
+        
+    
+    
+            var marker_4d30ab49ededd4677018c39d9c0d83aa = L.marker(
+                [43.0450802, -87.9173862],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_a10c3e1daf631614aa62a0ebfe9e4ad0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4d30ab49ededd4677018c39d9c0d83aa.setIcon(icon_a10c3e1daf631614aa62a0ebfe9e4ad0);
+        
+    
+        var popup_5ea83a3ef3c134b872e0028c8688ce46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be994aba8ed06e247fdeab47c284f6a5 = $(`<div id="html_be994aba8ed06e247fdeab47c284f6a5" style="width: 100.0%; height: 100.0%;"><b>Philadelphia 76ers @ Milwaukee Bucks</b><br><i>Date:</i> 2023-10-26 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_5ea83a3ef3c134b872e0028c8688ce46.setContent(html_be994aba8ed06e247fdeab47c284f6a5);
+            
+        
+
+        marker_4d30ab49ededd4677018c39d9c0d83aa.bindPopup(popup_5ea83a3ef3c134b872e0028c8688ce46)
+        ;
+
+        
+    
+    
+            var marker_d804ea95edb8c905e3c30f2d6dd3cb94 = L.marker(
+                [34.0430175, -118.2672541],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_e0449a8b196cc17a0ea0a6833376f492 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d804ea95edb8c905e3c30f2d6dd3cb94.setIcon(icon_e0449a8b196cc17a0ea0a6833376f492);
+        
+    
+        var popup_090c1aa7d1229eec3f522d7e799e6a85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77439402873f6fa548d07353ba86f78c = $(`<div id="html_77439402873f6fa548d07353ba86f78c" style="width: 100.0%; height: 100.0%;"><b>Phoenix Suns @ Los Angeles Lakers</b><br><i>Date:</i> 2023-10-26 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_090c1aa7d1229eec3f522d7e799e6a85.setContent(html_77439402873f6fa548d07353ba86f78c);
+            
+        
+
+        marker_d804ea95edb8c905e3c30f2d6dd3cb94.bindPopup(popup_090c1aa7d1229eec3f522d7e799e6a85)
+        ;
+
+        
+    
+    
+            var marker_5285a8278094c1a0231e3b241b4770b2 = L.marker(
+                [35.2251952, -80.8393468],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_01b7602ad9197faaa44a4a48db87e1b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5285a8278094c1a0231e3b241b4770b2.setIcon(icon_01b7602ad9197faaa44a4a48db87e1b5);
+        
+    
+        var popup_fcc439a9a71e78f32b99846014069680 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0c0465c0d49066b4b5b328372bf4e47 = $(`<div id="html_b0c0465c0d49066b4b5b328372bf4e47" style="width: 100.0%; height: 100.0%;"><b>Detroit Pistons @ Charlotte Hornets</b><br><i>Date:</i> 2023-10-27 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_fcc439a9a71e78f32b99846014069680.setContent(html_b0c0465c0d49066b4b5b328372bf4e47);
+            
+        
+
+        marker_5285a8278094c1a0231e3b241b4770b2.bindPopup(popup_fcc439a9a71e78f32b99846014069680)
+        ;
+
+        
+    
+    
+            var marker_9ef7e9b2cfeda1a4fde856d58b169d88 = L.marker(
+                [35.1381418, -90.0505864],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_d63dcb4d9edbb1fe773f96db92b513f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9ef7e9b2cfeda1a4fde856d58b169d88.setIcon(icon_d63dcb4d9edbb1fe773f96db92b513f7);
+        
+    
+        var popup_51867adcbd824755c868de4bbb5a0d09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d6f79e4d81c1c180dae4bb80662626a = $(`<div id="html_4d6f79e4d81c1c180dae4bb80662626a" style="width: 100.0%; height: 100.0%;"><b>Denver Nuggets @ Memphis Grizzlies</b><br><i>Date:</i> 2023-10-27 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_51867adcbd824755c868de4bbb5a0d09.setContent(html_4d6f79e4d81c1c180dae4bb80662626a);
+            
+        
+
+        marker_9ef7e9b2cfeda1a4fde856d58b169d88.bindPopup(popup_51867adcbd824755c868de4bbb5a0d09)
+        ;
+
+        
+    
+    
+            var marker_2678a28d11c1ae0a695e25a493dcd57a = L.marker(
+                [33.7572891, -84.3963244],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_fe9003f2eab0e5edc5ea8562f082735d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2678a28d11c1ae0a695e25a493dcd57a.setIcon(icon_fe9003f2eab0e5edc5ea8562f082735d);
+        
+    
+        var popup_cc2ee9c2ad67a543ad278ee349955f54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d497002e86f6d5009a294541c1aa478 = $(`<div id="html_0d497002e86f6d5009a294541c1aa478" style="width: 100.0%; height: 100.0%;"><b>New York Knicks @ Atlanta Hawks</b><br><i>Date:</i> 2023-10-27 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_cc2ee9c2ad67a543ad278ee349955f54.setContent(html_0d497002e86f6d5009a294541c1aa478);
+            
+        
+
+        marker_2678a28d11c1ae0a695e25a493dcd57a.bindPopup(popup_cc2ee9c2ad67a543ad278ee349955f54)
+        ;
+
+        
+    
+    
+            var marker_7ed80c2bdf4d7aa743e460138e6f3df8 = L.marker(
+                [42.366198, -71.062146],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_98e374232fc5bc10b03165c5c8164d51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7ed80c2bdf4d7aa743e460138e6f3df8.setIcon(icon_98e374232fc5bc10b03165c5c8164d51);
+        
+    
+        var popup_7d9db28d7aa756059a4d7ae33db3369a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8238aac1b14a991a2e51a6619cd25da = $(`<div id="html_b8238aac1b14a991a2e51a6619cd25da" style="width: 100.0%; height: 100.0%;"><b>Miami Heat @ Boston Celtics</b><br><i>Date:</i> 2023-10-27 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_7d9db28d7aa756059a4d7ae33db3369a.setContent(html_b8238aac1b14a991a2e51a6619cd25da);
+            
+        
+
+        marker_7ed80c2bdf4d7aa743e460138e6f3df8.bindPopup(popup_7d9db28d7aa756059a4d7ae33db3369a)
+        ;
+
+        
+    
+    
+            var marker_6d8b7b3325b36ba13b983d7d3f5e6e9a = L.marker(
+                [41.4965474, -81.68805739999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_7e2ed7a828f47ffe13c2b1d9f23cd951 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6d8b7b3325b36ba13b983d7d3f5e6e9a.setIcon(icon_7e2ed7a828f47ffe13c2b1d9f23cd951);
+        
+    
+        var popup_451a79ea2529d2c37d1c8088c6b7e678 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e84d1b127d5152e0c3072b22ef44555b = $(`<div id="html_e84d1b127d5152e0c3072b22ef44555b" style="width: 100.0%; height: 100.0%;"><b>Oklahoma City Thunder @ Cleveland Cavaliers</b><br><i>Date:</i> 2023-10-27 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_451a79ea2529d2c37d1c8088c6b7e678.setContent(html_e84d1b127d5152e0c3072b22ef44555b);
+            
+        
+
+        marker_6d8b7b3325b36ba13b983d7d3f5e6e9a.bindPopup(popup_451a79ea2529d2c37d1c8088c6b7e678)
+        ;
+
+        
+    
+    
+            var marker_d8c248f2908d777243db798cd1d1d3a5 = L.marker(
+                [41.8806908, -87.6741759],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_3e34df6c834e0fe507d450bb4c326b78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d8c248f2908d777243db798cd1d1d3a5.setIcon(icon_3e34df6c834e0fe507d450bb4c326b78);
+        
+    
+        var popup_2000d4ab8e185c4d567377796d979b5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f085457ed90a1e4b02a2b054b2aeb2c7 = $(`<div id="html_f085457ed90a1e4b02a2b054b2aeb2c7" style="width: 100.0%; height: 100.0%;"><b>Toronto Raptors @ Chicago Bulls</b><br><i>Date:</i> 2023-10-27 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_2000d4ab8e185c4d567377796d979b5b.setContent(html_f085457ed90a1e4b02a2b054b2aeb2c7);
+            
+        
+
+        marker_d8c248f2908d777243db798cd1d1d3a5.bindPopup(popup_2000d4ab8e185c4d567377796d979b5b)
+        ;
+
+        
+    
+    
+            var marker_65b53fa4ceb8f9968590177b409c25af = L.marker(
+                [29.4270201, -98.43746519999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_43705ed8e204d0ad786ab7e828ae8620 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_65b53fa4ceb8f9968590177b409c25af.setIcon(icon_43705ed8e204d0ad786ab7e828ae8620);
+        
+    
+        var popup_725de6b06f9f645e9c4135a7b8349726 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d129b9ac2004cb6f1e7730066ea0340 = $(`<div id="html_6d129b9ac2004cb6f1e7730066ea0340" style="width: 100.0%; height: 100.0%;"><b>Houston Rockets @ San Antonio Spurs</b><br><i>Date:</i> 2023-10-27 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_725de6b06f9f645e9c4135a7b8349726.setContent(html_6d129b9ac2004cb6f1e7730066ea0340);
+            
+        
+
+        marker_65b53fa4ceb8f9968590177b409c25af.bindPopup(popup_725de6b06f9f645e9c4135a7b8349726)
+        ;
+
+        
+    
+    
+            var marker_671973ad48a58840243ad1a357551348 = L.marker(
+                [32.7903908, -96.8102547],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_f0aef0d35777c9dfef93a77e8050032f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_671973ad48a58840243ad1a357551348.setIcon(icon_f0aef0d35777c9dfef93a77e8050032f);
+        
+    
+        var popup_6286b38d4e95d359db255a54467d94dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1d8580f64cedb58318c612ccc4e8067 = $(`<div id="html_f1d8580f64cedb58318c612ccc4e8067" style="width: 100.0%; height: 100.0%;"><b>Brooklyn Nets @ Dallas Mavericks</b><br><i>Date:</i> 2023-10-27 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_6286b38d4e95d359db255a54467d94dc.setContent(html_f1d8580f64cedb58318c612ccc4e8067);
+            
+        
+
+        marker_671973ad48a58840243ad1a357551348.bindPopup(popup_6286b38d4e95d359db255a54467d94dc)
+        ;
+
+        
+    
+    
+            var marker_313e0aff6237070ed3ab9924f317ecb8 = L.marker(
+                [40.7683137, -111.9003156],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_44b323c0b86a9874363467968bb7d7e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_313e0aff6237070ed3ab9924f317ecb8.setIcon(icon_44b323c0b86a9874363467968bb7d7e6);
+        
+    
+        var popup_4334f423f59f3ad4ca7ff27b24ebf98b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1af27a885e44197ef4cb9eff16de66a0 = $(`<div id="html_1af27a885e44197ef4cb9eff16de66a0" style="width: 100.0%; height: 100.0%;"><b>Los Angeles Clippers @ Utah Jazz</b><br><i>Date:</i> 2023-10-27 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_4334f423f59f3ad4ca7ff27b24ebf98b.setContent(html_1af27a885e44197ef4cb9eff16de66a0);
+            
+        
+
+        marker_313e0aff6237070ed3ab9924f317ecb8.bindPopup(popup_4334f423f59f3ad4ca7ff27b24ebf98b)
+        ;
+
+        
+    
+    
+            var marker_9fbe738dc10d362a03dbbca93e35b3d9 = L.marker(
+                [45.53156509999999, -122.6668423],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_7530e972a2e6814c86a6a94a8eac02c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9fbe738dc10d362a03dbbca93e35b3d9.setIcon(icon_7530e972a2e6814c86a6a94a8eac02c8);
+        
+    
+        var popup_8b1cc519c390b1fd0647b32aac91fc11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7070eb12d38f58cf0a5584c649fb5e06 = $(`<div id="html_7070eb12d38f58cf0a5584c649fb5e06" style="width: 100.0%; height: 100.0%;"><b>Orlando Magic @ Portland Trailblazers</b><br><i>Date:</i> 2023-10-27 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_8b1cc519c390b1fd0647b32aac91fc11.setContent(html_7070eb12d38f58cf0a5584c649fb5e06);
+            
+        
+
+        marker_9fbe738dc10d362a03dbbca93e35b3d9.bindPopup(popup_8b1cc519c390b1fd0647b32aac91fc11)
+        ;
+
+        
+    
+    
+            var marker_ec745be21ae0aed427ac1f54ea59c611 = L.marker(
+                [38.58031829999999, -121.4985594],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_11798d1e5b437ea85448dd2ef47b29bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ec745be21ae0aed427ac1f54ea59c611.setIcon(icon_11798d1e5b437ea85448dd2ef47b29bb);
+        
+    
+        var popup_3af6e7fcb70954147fc39e9325ad211d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19e9ab867f0e0d6c73f65be6bcb4bc97 = $(`<div id="html_19e9ab867f0e0d6c73f65be6bcb4bc97" style="width: 100.0%; height: 100.0%;"><b>Golden State Warriors @ Sacramento Kings</b><br><i>Date:</i> 2023-10-27 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_3af6e7fcb70954147fc39e9325ad211d.setContent(html_19e9ab867f0e0d6c73f65be6bcb4bc97);
+            
+        
+
+        marker_ec745be21ae0aed427ac1f54ea59c611.bindPopup(popup_3af6e7fcb70954147fc39e9325ad211d)
+        ;
+
+        
+    
+    
+            var marker_d59f5ee36e2fc1f9e92bfa8400e95585 = L.marker(
+                [42.3411026, -83.0552673],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_76a3694814ad564f0bcab3e2f5d086e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d59f5ee36e2fc1f9e92bfa8400e95585.setIcon(icon_76a3694814ad564f0bcab3e2f5d086e2);
+        
+    
+        var popup_61edec7ed5e4c112aff55e58cadb1a95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_004431ae763c2b12a3ba1bb729d40e5f = $(`<div id="html_004431ae763c2b12a3ba1bb729d40e5f" style="width: 100.0%; height: 100.0%;"><b>Chicago Bulls @ Detroit Pistons</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_61edec7ed5e4c112aff55e58cadb1a95.setContent(html_004431ae763c2b12a3ba1bb729d40e5f);
+            
+        
+
+        marker_d59f5ee36e2fc1f9e92bfa8400e95585.bindPopup(popup_61edec7ed5e4c112aff55e58cadb1a95)
+        ;
+
+        
+    
+    
+            var marker_17d5f66e3fce103bfa2f1359c4729d45 = L.marker(
+                [38.8981675, -77.02085679999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_036d4b3e87fdc7a8c80909c901a8141f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_17d5f66e3fce103bfa2f1359c4729d45.setIcon(icon_036d4b3e87fdc7a8c80909c901a8141f);
+        
+    
+        var popup_abe407f7124afe948483d82bc0f2fcae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_825a082613c9951952ce52234a6bcc0a = $(`<div id="html_825a082613c9951952ce52234a6bcc0a" style="width: 100.0%; height: 100.0%;"><b>Memphis Grizzlies @ Washington Wizards</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_abe407f7124afe948483d82bc0f2fcae.setContent(html_825a082613c9951952ce52234a6bcc0a);
+            
+        
+
+        marker_17d5f66e3fce103bfa2f1359c4729d45.bindPopup(popup_abe407f7124afe948483d82bc0f2fcae)
+        ;
+
+        
+    
+    
+            var marker_4f679949291198c508a319513c298ced = L.marker(
+                [29.9490351, -90.08205679999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_6378b68cdf762b76d4cfb5576e8ab292 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4f679949291198c508a319513c298ced.setIcon(icon_6378b68cdf762b76d4cfb5576e8ab292);
+        
+    
+        var popup_30812b8399b0b0a059eb34600ebb9643 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83da7f753a93f6a00718decd9ade29ed = $(`<div id="html_83da7f753a93f6a00718decd9ade29ed" style="width: 100.0%; height: 100.0%;"><b>New York Knicks @ New Orleans Pelicans</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_30812b8399b0b0a059eb34600ebb9643.setContent(html_83da7f753a93f6a00718decd9ade29ed);
+            
+        
+
+        marker_4f679949291198c508a319513c298ced.bindPopup(popup_30812b8399b0b0a059eb34600ebb9643)
+        ;
+
+        
+    
+    
+            var marker_7ea966a39deb6d1dd5c6792122cf42b3 = L.marker(
+                [41.4965474, -81.68805739999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_afaf8e5e1d96cf805882c6ff7b38b5b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7ea966a39deb6d1dd5c6792122cf42b3.setIcon(icon_afaf8e5e1d96cf805882c6ff7b38b5b1);
+        
+    
+        var popup_76e0377345843a613eb4357a91bb13b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4d15166ba2d88b68ce6db43e574b600 = $(`<div id="html_f4d15166ba2d88b68ce6db43e574b600" style="width: 100.0%; height: 100.0%;"><b>Indiana Pacers @ Cleveland Cavaliers</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_76e0377345843a613eb4357a91bb13b4.setContent(html_f4d15166ba2d88b68ce6db43e574b600);
+            
+        
+
+        marker_7ea966a39deb6d1dd5c6792122cf42b3.bindPopup(popup_76e0377345843a613eb4357a91bb13b4)
+        ;
+
+        
+    
+    
+            var marker_af38ad3c445391a19d24c2eac82d3b06 = L.marker(
+                [43.6434661, -79.3790989],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_4098977d492eda2fa8d248e306e6d658 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_af38ad3c445391a19d24c2eac82d3b06.setIcon(icon_4098977d492eda2fa8d248e306e6d658);
+        
+    
+        var popup_550c104073015a884161d88fadcb7da0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d01de53789e7d5c52328693356302a3 = $(`<div id="html_3d01de53789e7d5c52328693356302a3" style="width: 100.0%; height: 100.0%;"><b>Philadelphia 76ers @ Toronto Raptors</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_550c104073015a884161d88fadcb7da0.setContent(html_3d01de53789e7d5c52328693356302a3);
+            
+        
+
+        marker_af38ad3c445391a19d24c2eac82d3b06.bindPopup(popup_550c104073015a884161d88fadcb7da0)
+        ;
+
+        
+    
+    
+            var marker_55cfcd925d6c0743c5f9fab4b864b3f4 = L.marker(
+                [44.9794632, -93.2760948],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_1cfd523a6ac1c1ee6b083f2f3be40e9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_55cfcd925d6c0743c5f9fab4b864b3f4.setIcon(icon_1cfd523a6ac1c1ee6b083f2f3be40e9c);
+        
+    
+        var popup_e7a6c13dbfb243b89e302dfedd06ec73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01e64bfb3f62401a52365bb3e0e2a52c = $(`<div id="html_01e64bfb3f62401a52365bb3e0e2a52c" style="width: 100.0%; height: 100.0%;"><b>Miami Heat @ Minnesota Timberwolves</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_e7a6c13dbfb243b89e302dfedd06ec73.setContent(html_01e64bfb3f62401a52365bb3e0e2a52c);
+            
+        
+
+        marker_55cfcd925d6c0743c5f9fab4b864b3f4.bindPopup(popup_e7a6c13dbfb243b89e302dfedd06ec73)
+        ;
+
+        
+    
+    
+            var marker_0120d66ef11badff44752a83a910176d = L.marker(
+                [33.445737, -112.0712003],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_2c86ec1d082f8542bfa382db8c13f0f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0120d66ef11badff44752a83a910176d.setIcon(icon_2c86ec1d082f8542bfa382db8c13f0f8);
+        
+    
+        var popup_96870ed6f60f8d78cbab418b50ca2865 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bd1464258172c26ec32e3e81080c043 = $(`<div id="html_2bd1464258172c26ec32e3e81080c043" style="width: 100.0%; height: 100.0%;"><b>Utah Jazz @ Phoenix Suns</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_96870ed6f60f8d78cbab418b50ca2865.setContent(html_2bd1464258172c26ec32e3e81080c043);
+            
+        
+
+        marker_0120d66ef11badff44752a83a910176d.bindPopup(popup_96870ed6f60f8d78cbab418b50ca2865)
+        ;
+
+        
+    
+    
+            var marker_15de19ec897f898de7a46cbb7aff28fd = L.marker(
+                [35.4634247, -97.5151138],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_f8ff3f017d58d7f7827ef97ab74d513d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_15de19ec897f898de7a46cbb7aff28fd.setIcon(icon_f8ff3f017d58d7f7827ef97ab74d513d);
+        
+    
+        var popup_2486caefca806e133103b9865e37b5cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1da14d59548b21e63879311cff370c8c = $(`<div id="html_1da14d59548b21e63879311cff370c8c" style="width: 100.0%; height: 100.0%;"><b>Denver Nuggets @ Oklahoma City Thunder</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_2486caefca806e133103b9865e37b5cd.setContent(html_1da14d59548b21e63879311cff370c8c);
+            
+        
+
+        marker_15de19ec897f898de7a46cbb7aff28fd.bindPopup(popup_2486caefca806e133103b9865e37b5cd)
+        ;
+
+        
+    
+    
+            var marker_267925b65057a226912d43ed03ee1177 = L.marker(
+                [29.7509213, -95.3622173],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_59623e1f1a92fc3916ae5af13d4c9d3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_267925b65057a226912d43ed03ee1177.setIcon(icon_59623e1f1a92fc3916ae5af13d4c9d3b);
+        
+    
+        var popup_fd99038021e2eaaad047c9b413bce238 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b720d388e1ee34a9f840bc7fefb2fe6e = $(`<div id="html_b720d388e1ee34a9f840bc7fefb2fe6e" style="width: 100.0%; height: 100.0%;"><b>Golden State Warriors @ Houston Rockets</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_fd99038021e2eaaad047c9b413bce238.setContent(html_b720d388e1ee34a9f840bc7fefb2fe6e);
+            
+        
+
+        marker_267925b65057a226912d43ed03ee1177.bindPopup(popup_fd99038021e2eaaad047c9b413bce238)
+        ;
+
+        
+    
+    
+            var marker_d4eab112ba45d1b9629e672ecf52dde6 = L.marker(
+                [43.0450802, -87.9173862],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_b503d907916fdeb3da8b2eee7956471c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d4eab112ba45d1b9629e672ecf52dde6.setIcon(icon_b503d907916fdeb3da8b2eee7956471c);
+        
+    
+        var popup_f6f4f8e21b9186ecc3cdf37b597d6cab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ede595f965dfd8d3dcaced19161aa8a = $(`<div id="html_2ede595f965dfd8d3dcaced19161aa8a" style="width: 100.0%; height: 100.0%;"><b>Atlanta Hawks @ Milwaukee Bucks</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_f6f4f8e21b9186ecc3cdf37b597d6cab.setContent(html_2ede595f965dfd8d3dcaced19161aa8a);
+            
+        
+
+        marker_d4eab112ba45d1b9629e672ecf52dde6.bindPopup(popup_f6f4f8e21b9186ecc3cdf37b597d6cab)
+        ;
+
+        
+    
+    
+            var marker_4ae1868fb8e33048e7e5472e9bca6c7e = L.marker(
+                [39.9012015, -75.17197949999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_3aa31553f5c9ec8c76b1a1aa4bf6756e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4ae1868fb8e33048e7e5472e9bca6c7e.setIcon(icon_3aa31553f5c9ec8c76b1a1aa4bf6756e);
+        
+    
+        var popup_15d24b7deb57453b2f1b01699c695175 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54dba976d5760a2937b2644443f30656 = $(`<div id="html_54dba976d5760a2937b2644443f30656" style="width: 100.0%; height: 100.0%;"><b>Portland Trailblazers @ Philadelphia 76ers</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_15d24b7deb57453b2f1b01699c695175.setContent(html_54dba976d5760a2937b2644443f30656);
+            
+        
+
+        marker_4ae1868fb8e33048e7e5472e9bca6c7e.bindPopup(popup_15d24b7deb57453b2f1b01699c695175)
+        ;
+
+        
+    
+    
+            var marker_1c4c86f0f8e9c1e505a59138c232381b = L.marker(
+                [34.0430175, -118.2672541],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_7158c980cfc792cb27af5d85dccaf9af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1c4c86f0f8e9c1e505a59138c232381b.setIcon(icon_7158c980cfc792cb27af5d85dccaf9af);
+        
+    
+        var popup_b914bcba31ef7df57556e841af1a4064 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8bfa0f7ab8807a72cf808711974b564 = $(`<div id="html_d8bfa0f7ab8807a72cf808711974b564" style="width: 100.0%; height: 100.0%;"><b>San Antonio Spurs @ Los Angeles Clippers</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_b914bcba31ef7df57556e841af1a4064.setContent(html_d8bfa0f7ab8807a72cf808711974b564);
+            
+        
+
+        marker_1c4c86f0f8e9c1e505a59138c232381b.bindPopup(popup_b914bcba31ef7df57556e841af1a4064)
+        ;
+
+        
+    
+    
+            var marker_e2b225826101959210c0e72cef5a5837 = L.marker(
+                [38.58031829999999, -121.4985594],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_8970071333b2164feacd69afe5223787 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e2b225826101959210c0e72cef5a5837.setIcon(icon_8970071333b2164feacd69afe5223787);
+        
+    
+        var popup_18a03ff03198e3dbc2efe317d8d645a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f8a18b51cee7b4636022f201ac808b1 = $(`<div id="html_0f8a18b51cee7b4636022f201ac808b1" style="width: 100.0%; height: 100.0%;"><b>Los Angeles Lakers @ Sacramento Kings</b><br><i>Date:</i> 2023-10-29 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_18a03ff03198e3dbc2efe317d8d645a1.setContent(html_0f8a18b51cee7b4636022f201ac808b1);
+            
+        
+
+        marker_e2b225826101959210c0e72cef5a5837.bindPopup(popup_18a03ff03198e3dbc2efe317d8d645a1)
+        ;
+
+        
+    
+    
+            var marker_04e434ea2bc82d34d8f726495ea77443 = L.marker(
+                [35.2251952, -80.8393468],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_c8ba75eaa99a3ec1d9be431ec06c17bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_04e434ea2bc82d34d8f726495ea77443.setIcon(icon_c8ba75eaa99a3ec1d9be431ec06c17bc);
+        
+    
+        var popup_67e8a5024617ff56c513f02aab42c532 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca1809f552aca668ff94272f9ff800f0 = $(`<div id="html_ca1809f552aca668ff94272f9ff800f0" style="width: 100.0%; height: 100.0%;"><b>Brooklyn Nets @ Charlotte Hornets</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_67e8a5024617ff56c513f02aab42c532.setContent(html_ca1809f552aca668ff94272f9ff800f0);
+            
+        
+
+        marker_04e434ea2bc82d34d8f726495ea77443.bindPopup(popup_67e8a5024617ff56c513f02aab42c532)
+        ;
+
+        
+    
+    
+            var marker_5fd196f31b8c60b846c08d0573a874b6 = L.marker(
+                [39.7640434, -86.1555367],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_77275c42b6cc361bcbb6f839242c59cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5fd196f31b8c60b846c08d0573a874b6.setIcon(icon_77275c42b6cc361bcbb6f839242c59cb);
+        
+    
+        var popup_54a5b2b51ba0ef760ba7aa74bd1d0843 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2b06f82161c4d30623be5c45ccff6e9 = $(`<div id="html_c2b06f82161c4d30623be5c45ccff6e9" style="width: 100.0%; height: 100.0%;"><b>Chicago Bulls @ Indiana Pacers</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_54a5b2b51ba0ef760ba7aa74bd1d0843.setContent(html_c2b06f82161c4d30623be5c45ccff6e9);
+            
+        
+
+        marker_5fd196f31b8c60b846c08d0573a874b6.bindPopup(popup_54a5b2b51ba0ef760ba7aa74bd1d0843)
+        ;
+
+        
+    
+    
+            var marker_2f6194f5d24331892a4c88eca8346e29 = L.marker(
+                [38.8981675, -77.02085679999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_e92c8f61abed122456ef49500d1945a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2f6194f5d24331892a4c88eca8346e29.setIcon(icon_e92c8f61abed122456ef49500d1945a6);
+        
+    
+        var popup_50e43bd417dff882ea4382d0bf5e0291 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_159f8e14e30dc3cbdfd2964124bc3eee = $(`<div id="html_159f8e14e30dc3cbdfd2964124bc3eee" style="width: 100.0%; height: 100.0%;"><b>Boston Celtics @ Washington Wizards</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_50e43bd417dff882ea4382d0bf5e0291.setContent(html_159f8e14e30dc3cbdfd2964124bc3eee);
+            
+        
+
+        marker_2f6194f5d24331892a4c88eca8346e29.bindPopup(popup_50e43bd417dff882ea4382d0bf5e0291)
+        ;
+
+        
+    
+    
+            var marker_6b822ac58bdc584a08487abc24f7bf5e = L.marker(
+                [33.7572891, -84.3963244],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_b45309bbcd1ac887fd678eae1b56a8fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6b822ac58bdc584a08487abc24f7bf5e.setIcon(icon_b45309bbcd1ac887fd678eae1b56a8fd);
+        
+    
+        var popup_a95a22d701bb411681a3708a98f0523e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb05f2f1401c6231721e9e8c69ed3857 = $(`<div id="html_cb05f2f1401c6231721e9e8c69ed3857" style="width: 100.0%; height: 100.0%;"><b>Minnesota Timberwolves @ Atlanta Hawks</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_a95a22d701bb411681a3708a98f0523e.setContent(html_cb05f2f1401c6231721e9e8c69ed3857);
+            
+        
+
+        marker_6b822ac58bdc584a08487abc24f7bf5e.bindPopup(popup_a95a22d701bb411681a3708a98f0523e)
+        ;
+
+        
+    
+    
+            var marker_3e2df150f7503d63f73f40dba0a1597f = L.marker(
+                [43.6434661, -79.3790989],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_c3fd2f918da2f694500c9fb4ace53e0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3e2df150f7503d63f73f40dba0a1597f.setIcon(icon_c3fd2f918da2f694500c9fb4ace53e0c);
+        
+    
+        var popup_602647e3c939babdc09913a0477bdffc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e52360f76d5c3b2b79957580b54c75c9 = $(`<div id="html_e52360f76d5c3b2b79957580b54c75c9" style="width: 100.0%; height: 100.0%;"><b>Portland Trailblazers @ Toronto Raptors</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_602647e3c939babdc09913a0477bdffc.setContent(html_e52360f76d5c3b2b79957580b54c75c9);
+            
+        
+
+        marker_3e2df150f7503d63f73f40dba0a1597f.bindPopup(popup_602647e3c939babdc09913a0477bdffc)
+        ;
+
+        
+    
+    
+            var marker_954044bf420ee6839b81970bd8992b92 = L.marker(
+                [35.1381418, -90.0505864],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_3ec950916ac86d50ee218d9bee54f796 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_954044bf420ee6839b81970bd8992b92.setIcon(icon_3ec950916ac86d50ee218d9bee54f796);
+        
+    
+        var popup_30896e5a14ec3043519f1db41a4e174a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b392770a27910c5983011aecfd1ba74 = $(`<div id="html_0b392770a27910c5983011aecfd1ba74" style="width: 100.0%; height: 100.0%;"><b>Dallas Mavericks @ Memphis Grizzlies</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_30896e5a14ec3043519f1db41a4e174a.setContent(html_0b392770a27910c5983011aecfd1ba74);
+            
+        
+
+        marker_954044bf420ee6839b81970bd8992b92.bindPopup(popup_30896e5a14ec3043519f1db41a4e174a)
+        ;
+
+        
+    
+    
+            var marker_a35e7ed7beb15ab98fe404ef1e549d1d = L.marker(
+                [43.0450802, -87.9173862],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_747dbb1d285b60b67d2b5b78c04fd66c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a35e7ed7beb15ab98fe404ef1e549d1d.setIcon(icon_747dbb1d285b60b67d2b5b78c04fd66c);
+        
+    
+        var popup_7024578ff116f2035de727c09edc6a21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8e017f92e5d4e3ca1d8a5389e172747 = $(`<div id="html_c8e017f92e5d4e3ca1d8a5389e172747" style="width: 100.0%; height: 100.0%;"><b>Miami Heat @ Milwaukee Bucks</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_7024578ff116f2035de727c09edc6a21.setContent(html_c8e017f92e5d4e3ca1d8a5389e172747);
+            
+        
+
+        marker_a35e7ed7beb15ab98fe404ef1e549d1d.bindPopup(popup_7024578ff116f2035de727c09edc6a21)
+        ;
+
+        
+    
+    
+            var marker_37e19778a4ae3bc48e1a50d5c573ee06 = L.marker(
+                [29.9490351, -90.08205679999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_2914c53590f0e482168be36d9beba8bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_37e19778a4ae3bc48e1a50d5c573ee06.setIcon(icon_2914c53590f0e482168be36d9beba8bf);
+        
+    
+        var popup_2099e3002c415d604b0ecae5baf3eea3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_034a507b3a9ab7a4d10e9a1a63344d27 = $(`<div id="html_034a507b3a9ab7a4d10e9a1a63344d27" style="width: 100.0%; height: 100.0%;"><b>Golden State Warriors @ New Orleans Pelicans</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_2099e3002c415d604b0ecae5baf3eea3.setContent(html_034a507b3a9ab7a4d10e9a1a63344d27);
+            
+        
+
+        marker_37e19778a4ae3bc48e1a50d5c573ee06.bindPopup(popup_2099e3002c415d604b0ecae5baf3eea3)
+        ;
+
+        
+    
+    
+            var marker_5d4f21c241e599d67e745e5c5042d59d = L.marker(
+                [35.4634247, -97.5151138],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_efcea777c0d363c0abf0acb975385990 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5d4f21c241e599d67e745e5c5042d59d.setIcon(icon_efcea777c0d363c0abf0acb975385990);
+        
+    
+        var popup_2b6a6873367581b0030b0933d5daea49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e64c1335b6e5f793a945442e189c0a6 = $(`<div id="html_2e64c1335b6e5f793a945442e189c0a6" style="width: 100.0%; height: 100.0%;"><b>Detroit Pistons @ Oklahoma City Thunder</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_2b6a6873367581b0030b0933d5daea49.setContent(html_2e64c1335b6e5f793a945442e189c0a6);
+            
+        
+
+        marker_5d4f21c241e599d67e745e5c5042d59d.bindPopup(popup_2b6a6873367581b0030b0933d5daea49)
+        ;
+
+        
+    
+    
+            var marker_4c801a2e4d2af0a61508ad4ebc230163 = L.marker(
+                [39.7486519, -105.0075988],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_bf1c905c74607b54f1d4837c6eccee73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4c801a2e4d2af0a61508ad4ebc230163.setIcon(icon_bf1c905c74607b54f1d4837c6eccee73);
+        
+    
+        var popup_8d395fa1d3a52f3f22ae42e01dadf330 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd9f3fbe962f0416972a8386baaa205e = $(`<div id="html_cd9f3fbe962f0416972a8386baaa205e" style="width: 100.0%; height: 100.0%;"><b>Utah Jazz @ Denver Nuggets</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_8d395fa1d3a52f3f22ae42e01dadf330.setContent(html_cd9f3fbe962f0416972a8386baaa205e);
+            
+        
+
+        marker_4c801a2e4d2af0a61508ad4ebc230163.bindPopup(popup_8d395fa1d3a52f3f22ae42e01dadf330)
+        ;
+
+        
+    
+    
+            var marker_9e1add214f1906878448bbf4140fa764 = L.marker(
+                [34.0430175, -118.2672541],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_655bb236b2496b17435b9c3eb46270b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9e1add214f1906878448bbf4140fa764.setIcon(icon_655bb236b2496b17435b9c3eb46270b7);
+        
+    
+        var popup_7459b994ef27b8bf970fde28b2ec06f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e88040b2f3a9b7ed41a6d47f2044658 = $(`<div id="html_3e88040b2f3a9b7ed41a6d47f2044658" style="width: 100.0%; height: 100.0%;"><b>Orlando Magic @ Los Angeles Lakers</b><br><i>Date:</i> 2023-10-30 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_7459b994ef27b8bf970fde28b2ec06f1.setContent(html_3e88040b2f3a9b7ed41a6d47f2044658);
+            
+        
+
+        marker_9e1add214f1906878448bbf4140fa764.bindPopup(popup_7459b994ef27b8bf970fde28b2ec06f1)
+        ;
+
+        
+    
+    
+            var marker_6abc83130d0059825f0badcbf74806c3 = L.marker(
+                [41.4965474, -81.68805739999999],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_ceb6960ad5d19a6da65a3b512222f2d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6abc83130d0059825f0badcbf74806c3.setIcon(icon_ceb6960ad5d19a6da65a3b512222f2d7);
+        
+    
+        var popup_b97a1be574bd268cf51a8cf89bc2c580 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b2a5c0e5b469efd823cb5358277a41e = $(`<div id="html_5b2a5c0e5b469efd823cb5358277a41e" style="width: 100.0%; height: 100.0%;"><b>New York Knicks @ Cleveland Cavaliers</b><br><i>Date:</i> 2023-10-31 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_b97a1be574bd268cf51a8cf89bc2c580.setContent(html_5b2a5c0e5b469efd823cb5358277a41e);
+            
+        
+
+        marker_6abc83130d0059825f0badcbf74806c3.bindPopup(popup_b97a1be574bd268cf51a8cf89bc2c580)
+        ;
+
+        
+    
+    
+            var marker_16b3665874868f57288e1abb6c6926fa = L.marker(
+                [33.445737, -112.0712003],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_6cdb2b16cf1e88d8dbccb8aca77a4150 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_16b3665874868f57288e1abb6c6926fa.setIcon(icon_6cdb2b16cf1e88d8dbccb8aca77a4150);
+        
+    
+        var popup_69efb350196240d38ffdb59e2e8f3cb2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1140fc1c766808cc9a0fd81ddd6e1b6 = $(`<div id="html_d1140fc1c766808cc9a0fd81ddd6e1b6" style="width: 100.0%; height: 100.0%;"><b>San Antonio Spurs @ Phoenix Suns</b><br><i>Date:</i> 2023-10-31 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_69efb350196240d38ffdb59e2e8f3cb2.setContent(html_d1140fc1c766808cc9a0fd81ddd6e1b6);
+            
+        
+
+        marker_16b3665874868f57288e1abb6c6926fa.bindPopup(popup_69efb350196240d38ffdb59e2e8f3cb2)
+        ;
+
+        
+    
+    
+            var marker_0117c468ab34c7775b4ce9326b233444 = L.marker(
+                [34.0430175, -118.2672541],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_80cec9edd2570a3fc453a2e3bf5b8ce4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0117c468ab34c7775b4ce9326b233444.setIcon(icon_80cec9edd2570a3fc453a2e3bf5b8ce4);
+        
+    
+        var popup_846ee8e5596305f25da6cdfe2486ade4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f28ff14d1ee67e3e5017b51e44971976 = $(`<div id="html_f28ff14d1ee67e3e5017b51e44971976" style="width: 100.0%; height: 100.0%;"><b>Orlando Magic @ Los Angeles Clippers</b><br><i>Date:</i> 2023-10-31 00:00:00<br><u>Sport:</u> NBA</div>`)[0];
+                popup_846ee8e5596305f25da6cdfe2486ade4.setContent(html_f28ff14d1ee67e3e5017b51e44971976);
+            
+        
+
+        marker_0117c468ab34c7775b4ce9326b233444.bindPopup(popup_846ee8e5596305f25da6cdfe2486ade4)
+        ;
+
+        
+    
+    
+            var marker_6f12ab1be21d04c0b074494dbc377d1e = L.marker(
+                [50.7348316, -1.8390783],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_d166087d3a437be8774353e7cad87464 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_6f12ab1be21d04c0b074494dbc377d1e.setIcon(icon_d166087d3a437be8774353e7cad87464);
+        
+    
+        var popup_0b7d547af592701c5e3685d38fd30c94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74d2633a529eef37cd631ad3aced8852 = $(`<div id="html_74d2633a529eef37cd631ad3aced8852" style="width: 100.0%; height: 100.0%;"><b>Burnley @ Bournemouth</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> EPL</div>`)[0];
+                popup_0b7d547af592701c5e3685d38fd30c94.setContent(html_74d2633a529eef37cd631ad3aced8852);
+            
+        
+
+        marker_6f12ab1be21d04c0b074494dbc377d1e.bindPopup(popup_0b7d547af592701c5e3685d38fd30c94)
+        ;
+
+        
+    
+    
+            var marker_872684534c5f5f47f9e0a32a84fe7f26 = L.marker(
+                [51.55507790000001, -0.1084082],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_b4bbc285c3a16215d7243bc55f213670 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_872684534c5f5f47f9e0a32a84fe7f26.setIcon(icon_b4bbc285c3a16215d7243bc55f213670);
+        
+    
+        var popup_ad8f9130878e951c2672d4e00481e8e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_845ec5d09d2a54d29d3b406ad5393369 = $(`<div id="html_845ec5d09d2a54d29d3b406ad5393369" style="width: 100.0%; height: 100.0%;"><b>Sheffield United @ Arsenal</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> EPL</div>`)[0];
+                popup_ad8f9130878e951c2672d4e00481e8e4.setContent(html_845ec5d09d2a54d29d3b406ad5393369);
+            
+        
+
+        marker_872684534c5f5f47f9e0a32a84fe7f26.bindPopup(popup_ad8f9130878e951c2672d4e00481e8e4)
+        ;
+
+        
+    
+    
+            var marker_d214e04dee7a488ad09631670a9b3986 = L.marker(
+                [52.5086177, -1.8864192],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_d7d20263d5e77cfe997c9722d1108473 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_d214e04dee7a488ad09631670a9b3986.setIcon(icon_d7d20263d5e77cfe997c9722d1108473);
+        
+    
+        var popup_96f21ed29b16eaaee1b3960d7be3ed9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_550fdd079be24b4f98dbad2c61663a17 = $(`<div id="html_550fdd079be24b4f98dbad2c61663a17" style="width: 100.0%; height: 100.0%;"><b>Luton Town @ Aston Villa</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> EPL</div>`)[0];
+                popup_96f21ed29b16eaaee1b3960d7be3ed9c.setContent(html_550fdd079be24b4f98dbad2c61663a17);
+            
+        
+
+        marker_d214e04dee7a488ad09631670a9b3986.bindPopup(popup_96f21ed29b16eaaee1b3960d7be3ed9c)
+        ;
+
+        
+    
+    
+            var marker_95dafa38272b38e10009377e4e653b9f = L.marker(
+                [50.8615651, -0.0837163],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_20dee3c4c73a635e70a6dee9a0e70ed7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_95dafa38272b38e10009377e4e653b9f.setIcon(icon_20dee3c4c73a635e70a6dee9a0e70ed7);
+        
+    
+        var popup_3dff54eebb0a9a5763c7e26ba734b051 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b24663943875486a52ac75da32d0d8f4 = $(`<div id="html_b24663943875486a52ac75da32d0d8f4" style="width: 100.0%; height: 100.0%;"><b>Fulham @ Brighton & Hove Albion</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> EPL</div>`)[0];
+                popup_3dff54eebb0a9a5763c7e26ba734b051.setContent(html_b24663943875486a52ac75da32d0d8f4);
+            
+        
+
+        marker_95dafa38272b38e10009377e4e653b9f.bindPopup(popup_3dff54eebb0a9a5763c7e26ba734b051)
+        ;
+
+        
+    
+    
+            var marker_db62edf6c8695f015b74124644083816 = L.marker(
+                [51.481663, -0.1909565],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_c94d7358d341c0f36e56086fbdacc7eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_db62edf6c8695f015b74124644083816.setIcon(icon_c94d7358d341c0f36e56086fbdacc7eb);
+        
+    
+        var popup_e8bbdfc8f69647499dd824514c4648e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cba88729de94a8f36aacd4d138bcdd39 = $(`<div id="html_cba88729de94a8f36aacd4d138bcdd39" style="width: 100.0%; height: 100.0%;"><b>Brentford @ Chelsea</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> EPL</div>`)[0];
+                popup_e8bbdfc8f69647499dd824514c4648e3.setContent(html_cba88729de94a8f36aacd4d138bcdd39);
+            
+        
+
+        marker_db62edf6c8695f015b74124644083816.bindPopup(popup_e8bbdfc8f69647499dd824514c4648e3)
+        ;
+
+        
+    
+    
+            var marker_57612d2e21300fbcb88b45967f0c2d53 = L.marker(
+                [51.39797429999999, -0.0860576],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_4b394409b6efd9a19801f7d1e89bed5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_57612d2e21300fbcb88b45967f0c2d53.setIcon(icon_4b394409b6efd9a19801f7d1e89bed5e);
+        
+    
+        var popup_e215094c2d0b3e5831c32518b3504e19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30b4959b4d699fb7ff809efcc5a19645 = $(`<div id="html_30b4959b4d699fb7ff809efcc5a19645" style="width: 100.0%; height: 100.0%;"><b>Tottenham @ Crystal Palace</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> EPL</div>`)[0];
+                popup_e215094c2d0b3e5831c32518b3504e19.setContent(html_30b4959b4d699fb7ff809efcc5a19645);
+            
+        
+
+        marker_57612d2e21300fbcb88b45967f0c2d53.bindPopup(popup_e215094c2d0b3e5831c32518b3504e19)
+        ;
+
+        
+    
+    
+            var marker_7f773e5ecac17167d377c1d02e12207e = L.marker(
+                [53.4308333, -2.9608114],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_2978a93524e074cc8a2f4b4ab27493c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_7f773e5ecac17167d377c1d02e12207e.setIcon(icon_2978a93524e074cc8a2f4b4ab27493c8);
+        
+    
+        var popup_88325e65c91dfecb7c3b164cf89fd5bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc1beb493973d3f8c74ec27173a125f3 = $(`<div id="html_fc1beb493973d3f8c74ec27173a125f3" style="width: 100.0%; height: 100.0%;"><b>Nottingham Forest @ Liverpool</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> EPL</div>`)[0];
+                popup_88325e65c91dfecb7c3b164cf89fd5bd.setContent(html_fc1beb493973d3f8c74ec27173a125f3);
+            
+        
+
+        marker_7f773e5ecac17167d377c1d02e12207e.bindPopup(popup_88325e65c91dfecb7c3b164cf89fd5bd)
+        ;
+
+        
+    
+    
+            var marker_659686d02fb596f462e44526d6604b76 = L.marker(
+                [53.4630589, -2.2913401],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_70028a88e7ff262bf7f640104f730c85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_659686d02fb596f462e44526d6604b76.setIcon(icon_70028a88e7ff262bf7f640104f730c85);
+        
+    
+        var popup_d3e1ff2e2acfa23a790f31884804fb51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8e1f4af5596ff1b4044e65ebe2fd67c = $(`<div id="html_a8e1f4af5596ff1b4044e65ebe2fd67c" style="width: 100.0%; height: 100.0%;"><b>Manchester City @ Manchester United</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> EPL</div>`)[0];
+                popup_d3e1ff2e2acfa23a790f31884804fb51.setContent(html_a8e1f4af5596ff1b4044e65ebe2fd67c);
+            
+        
+
+        marker_659686d02fb596f462e44526d6604b76.bindPopup(popup_d3e1ff2e2acfa23a790f31884804fb51)
+        ;
+
+        
+    
+    
+            var marker_a3014c326dac88f9215cbb5684ffbdc1 = L.marker(
+                [51.5386761, -0.0172211],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_9396d53bbcf4fa362dd525f4b135e3eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_a3014c326dac88f9215cbb5684ffbdc1.setIcon(icon_9396d53bbcf4fa362dd525f4b135e3eb);
+        
+    
+        var popup_3ab5ad446273dedada78a06ad5125c2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91da187c502d53bee29243505348df76 = $(`<div id="html_91da187c502d53bee29243505348df76" style="width: 100.0%; height: 100.0%;"><b>Everton @ West Ham</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> EPL</div>`)[0];
+                popup_3ab5ad446273dedada78a06ad5125c2a.setContent(html_91da187c502d53bee29243505348df76);
+            
+        
+
+        marker_a3014c326dac88f9215cbb5684ffbdc1.bindPopup(popup_3ab5ad446273dedada78a06ad5125c2a)
+        ;
+
+        
+    
+    
+            var marker_fd0c15d81c73e64ecdc3218d52fc92be = L.marker(
+                [52.5902362, -2.1304288],
+                {}
+            ).addTo(marker_cluster_85e4971655257d97a2e0dd8d18c54081);
+        
+    
+            var icon_e4920f6d9c20287d6222af55ebd57701 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_fd0c15d81c73e64ecdc3218d52fc92be.setIcon(icon_e4920f6d9c20287d6222af55ebd57701);
+        
+    
+        var popup_51919885ef4a1e0b73fa204f0ca07427 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3d8aa88d7e01c2c9d8538425fa0eb09 = $(`<div id="html_b3d8aa88d7e01c2c9d8538425fa0eb09" style="width: 100.0%; height: 100.0%;"><b>Newcastle @ Wolves</b><br><i>Date:</i> 2023-10-28 00:00:00<br><u>Sport:</u> EPL</div>`)[0];
+                popup_51919885ef4a1e0b73fa204f0ca07427.setContent(html_b3d8aa88d7e01c2c9d8538425fa0eb09);
+            
+        
+
+        marker_fd0c15d81c73e64ecdc3218d52fc92be.bindPopup(popup_51919885ef4a1e0b73fa204f0ca07427)
+        ;
+
+        
+    
+</script>
+</html>
